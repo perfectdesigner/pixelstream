@@ -1,0 +1,39 @@
+12:40:38.515 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "/www/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 80,
+	"origin": "http://localhost:9001",
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"socketURL": "/",
+	"dirPath": "",
+	"homePage": "/demos/index.html",
+	"socketMessageEvent": "RTCMultiConnection-Message",
+	"socketCustomEvent": "RTCMultiConnection-Custom-Message",
+	"port": "9001",
+	"enableLogs": "false",
+	"autoRebootServerOnFailure": "false",
+	"isUseHTTPs": "false",
+	"sslKey": "./fake-keys/privatekey.pem",
+	"sslCert": "./fake-keys/certificate.pem",
+	"sslCabundle": "",
+	"enableAdmin": "true",
+	"adminUserName": "username",
+	"adminPassword": "password",
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun1.l.google.com:19302\",\"turn:5139-2804-14c-bf2f-8d61-75ec-cef3-3b95-87e9.sa.ngrok.io:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"Another TURN in the road\"}] }",
+	"publicIp": ""
+}
+12:40:38.870 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun1.l.google.com:19302","turn:5139-2804-14c-bf2f-8d61-75ec-cef3-3b95-87e9.sa.ngrok.io:19303"],"username":"PixelStreamingUser","credential":"Another TURN in the road"}]}
+12:40:38.879 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 4.27.
+12:40:39.005 WebSocket listening to Streamer connections on :8888
+12:40:39.005 WebSocket listening to Players connections on :80
+12:40:39.007 Http listening on *: 80

@@ -1,0 +1,622 @@
+14:14:31.469 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "/www/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8880,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun1.l.google.com:19302\",\"turn:flexinterativa-pixel1.ngrok.io:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"Another TURN in the road\"}] }",
+	"publicIp": ""
+}
+14:14:31.501 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun1.l.google.com:19302","turn:flexinterativa-pixel1.ngrok.io:19303"],"username":"PixelStreamingUser","credential":"Another TURN in the road"}]}
+14:14:31.504 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 4.27.
+14:14:31.526 WebSocket listening to Streamer connections on :8880
+14:14:31.526 WebSocket listening to Players connections on :80
+14:14:31.528 Http listening on *: 80
+14:55:45.259 Streamer connected: ::1
+14:55:58.598 player 101 (::1) connected
+14:55:58.996 <- player 101: {"type":"offer","sdp":"v=0\r\no=mozilla...THIS_IS_SDPARTA-99.0 90018481202366687 0 IN IP4 0.0.0.0\r\ns=-\r\nt=0 0\r\na=fingerprint:sha-256 32:AC:17:47:09:D0:95:3D:A3:13:53:BB:92:27:FC:DF:87:0E:EB:1B:36:D6:A9:CF:0A:21:DB:9E:74:13:33:C7\r\na=group:BUNDLE 0 1 2\r\na=ice-options:trickle\r\na=msid-semantic:WMS *\r\nm=video 9 UDP/TLS/RTP/SAVPF 120 124 121 125 126 127 97 98\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:6/recvonly http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:7 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=fmtp:126 profile-level-id=42e01f;level-asymmetry-allowed=1;packetization-mode=1\r\na=fmtp:97 profile-level-id=42e01f;level-asymmetry-allowed=1\r\na=fmtp:120 max-fs=12288;max-fr=60\r\na=fmtp:124 apt=120\r\na=fmtp:121 max-fs=12288;max-fr=60\r\na=fmtp:125 apt=121\r\na=fmtp:127 apt=126\r\na=fmtp:98 apt=97\r\na=ice-pwd:3012a86d4a4a139423f357441b0ad74a\r\na=ice-ufrag:d0a68dae\r\na=mid:0\r\na=rtcp-fb:120 nack\r\na=rtcp-fb:120 nack pli\r\na=rtcp-fb:120 ccm fir\r\na=rtcp-fb:120 goog-remb\r\na=rtcp-fb:120 transport-cc\r\na=rtcp-fb:121 nack\r\na=rtcp-fb:121 nack pli\r\na=rtcp-fb:121 ccm fir\r\na=rtcp-fb:121 goog-remb\r\na=rtcp-fb:121 transport-cc\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:126 transport-cc\r\na=rtcp-fb:97 nack\r\na=rtcp-fb:97 nack pli\r\na=rtcp-fb:97 ccm fir\r\na=rtcp-fb:97 goog-remb\r\na=rtcp-fb:97 transport-cc\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:120 VP8/90000\r\na=rtpmap:124 rtx/90000\r\na=rtpmap:121 VP9/90000\r\na=rtpmap:125 rtx/90000\r\na=rtpmap:126 H264/90000\r\na=rtpmap:127 rtx/90000\r\na=rtpmap:97 H264/90000\r\na=rtpmap:98 rtx/90000\r\na=setup:actpass\r\na=ssrc:779367821 cname:{cb23e576-78bd-49b1-bb0b-208a67268dec}\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109 9 0 8 101\r\nc=IN IP4 0.0.0.0\r\na=recvonly\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2/recvonly urn:ietf:params:rtp-hdrext:csrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=fmtp:109 maxplaybackrate=48000;stereo=1;useinbandfec=1;stereo=1;sprop-maxcapturerate=48000\r\na=fmtp:101 0-15\r\na=ice-pwd:3012a86d4a4a139423f357441b0ad74a\r\na=ice-ufrag:d0a68dae\r\na=mid:1\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=rtpmap:9 G722/8000/1\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:101 telephone-event/8000/1\r\na=setup:actpass\r\na=ssrc:369999444 cname:{cb23e576-78bd-49b1-bb0b-208a67268dec}\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=sendrecv\r\na=ice-pwd:3012a86d4a4a139423f357441b0ad74a\r\na=ice-ufrag:d0a68dae\r\na=mid:2\r\na=setup:actpass\r\na=sctp-port:5000\r\na=max-message-size:1073741823\r\n"}
+14:55:59.001 <- player 101: offer
+14:55:59.012 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:0 1 UDP 2122252543 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 52870 typ host","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.012 <- player 101: iceCandidate
+14:55:59.027 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3 1 UDP 2122187007 7348960f-918c-4088-93aa-92e24345f37a.local 52871 typ host","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.029 <- player 101: iceCandidate
+14:55:59.031 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:6 1 TCP 2105524479 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 9 typ host tcptype active","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.032 <- player 101: iceCandidate
+14:55:59.038 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:7 1 TCP 2105458943 7348960f-918c-4088-93aa-92e24345f37a.local 9 typ host tcptype active","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.046 <- player 101: iceCandidate
+14:55:59.048 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:0 2 UDP 2122252542 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 52872 typ host","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.051 <- player 101: iceCandidate
+14:55:59.053 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3 2 UDP 2122187006 7348960f-918c-4088-93aa-92e24345f37a.local 52873 typ host","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.058 <- player 101: iceCandidate
+14:55:59.060 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:6 2 TCP 2105524478 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 9 typ host tcptype active","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.062 <- player 101: iceCandidate
+14:55:59.063 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:7 2 TCP 2105458942 7348960f-918c-4088-93aa-92e24345f37a.local 9 typ host tcptype active","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.065 <- player 101: iceCandidate
+14:55:59.068 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:0 1 UDP 2122252543 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 52874 typ host","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.072 <- player 101: iceCandidate
+14:55:59.074 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3 1 UDP 2122187007 7348960f-918c-4088-93aa-92e24345f37a.local 52875 typ host","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.077 <- player 101: iceCandidate
+14:55:59.079 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:6 1 TCP 2105524479 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 9 typ host tcptype active","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.086 <- player 101: iceCandidate
+14:55:59.089 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:7 1 TCP 2105458943 7348960f-918c-4088-93aa-92e24345f37a.local 9 typ host tcptype active","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.092 <- player 101: iceCandidate
+14:55:59.094 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:0 2 UDP 2122252542 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 52876 typ host","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.096 <- player 101: iceCandidate
+14:55:59.153 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3 2 UDP 2122187006 7348960f-918c-4088-93aa-92e24345f37a.local 52877 typ host","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.161 <- player 101: iceCandidate
+14:55:59.162 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:6 2 TCP 2105524478 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 9 typ host tcptype active","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.163 <- player 101: iceCandidate
+14:55:59.163 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:7 2 TCP 2105458942 7348960f-918c-4088-93aa-92e24345f37a.local 9 typ host tcptype active","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.164 <- player 101: iceCandidate
+14:55:59.164 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:0 1 UDP 2122252543 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 52878 typ host","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"d0a68dae"}}
+14:55:59.165 <- player 101: iceCandidate
+14:55:59.166 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3 1 UDP 2122187007 7348960f-918c-4088-93aa-92e24345f37a.local 52879 typ host","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"d0a68dae"}}
+14:55:59.166 <- player 101: iceCandidate
+14:55:59.167 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:6 1 TCP 2105524479 5dc17223-8d08-4547-8ea5-d946a2cf3011.local 9 typ host tcptype active","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"d0a68dae"}}
+14:55:59.167 <- player 101: iceCandidate
+14:55:59.167 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:7 1 TCP 2105458943 7348960f-918c-4088-93aa-92e24345f37a.local 9 typ host tcptype active","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"d0a68dae"}}
+14:55:59.168 <- player 101: iceCandidate
+14:55:59.431 <- Streamer: {"type":"answer","playerId":101,"sdp":"v=0\r\no=- 971397119905621508 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 126 127\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:mGLS\r\na=ice-pwd:MhSRlCJdNm8FDf59eWh+2Ssx\r\na=ice-options:trickle\r\na=fingerprint:sha-256 AA:AA:21:44:87:B6:30:AA:30:E9:1F:83:A0:B8:62:C0:7B:E3:D7:EF:4F:F9:CA:6C:13:0F:D3:6F:DF:77:8E:C3\r\na=setup:active\r\na=mid:0\r\na=extmap:5 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:4 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:7 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:126 H264/90000\r\na=rtcp-fb:126 goog-remb\r\na=rtcp-fb:126 transport-cc\r\na=rtcp-fb:126 ccm fir\r\na=rtcp-fb:126 nack\r\na=rtcp-fb:126 nack pli\r\na=fmtp:126 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:127 rtx/90000\r\na=fmtp:127 apt=126\r\na=ssrc-group:FID 21142083 2519993\r\na=ssrc:21142083 cname:yWiQjkuBBGJ8M1w9\r\na=ssrc:21142083 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:21142083 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:21142083 label:pixelstreaming_video_track_label\r\na=ssrc:2519993 cname:yWiQjkuBBGJ8M1w9\r\na=ssrc:2519993 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:2519993 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:2519993 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 109\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:mGLS\r\na=ice-pwd:MhSRlCJdNm8FDf59eWh+2Ssx\r\na=ice-options:trickle\r\na=fingerprint:sha-256 AA:AA:21:44:87:B6:30:AA:30:E9:1F:83:A0:B8:62:C0:7B:E3:D7:EF:4F:F9:CA:6C:13:0F:D3:6F:DF:77:8E:C3\r\na=setup:active\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:3 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendonly\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:109 opus/48000/2\r\na=fmtp:109 minptime=10;useinbandfec=1\r\na=ssrc:3586965730 cname:yWiQjkuBBGJ8M1w9\r\na=ssrc:3586965730 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:3586965730 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:3586965730 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\nb=AS:30\r\na=ice-ufrag:mGLS\r\na=ice-pwd:MhSRlCJdNm8FDf59eWh+2Ssx\r\na=ice-options:trickle\r\na=fingerprint:sha-256 AA:AA:21:44:87:B6:30:AA:30:E9:1F:83:A0:B8:62:C0:7B:E3:D7:EF:4F:F9:CA:6C:13:0F:D3:6F:DF:77:8E:C3\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+14:55:59.464 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2807384130 1 udp 2122262783 2804:14c:bf2f:8d61:853e:755c:557c:41c2 62586 typ host generation 0 ufrag mGLS network-id 2"}}
+14:55:59.490 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:4 1 UDP 1685987327 187.22.129.241 19494 typ srflx raddr 0.0.0.0 rport 0","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.491 <- player 101: iceCandidate
+14:55:59.498 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3738907347 1 udp 2122197247 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 62587 typ host generation 0 ufrag mGLS network-id 3"}}
+14:55:59.532 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:4 2 UDP 1685987326 187.22.129.241 19495 typ srflx raddr 0.0.0.0 rport 0","sdpMid":"0","sdpMLineIndex":0,"usernameFragment":"d0a68dae"}}
+14:55:59.535 <- player 101: iceCandidate
+14:55:59.536 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 62588 typ host generation 0 ufrag mGLS network-id 1"}}
+14:55:59.541 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:4 1 UDP 1685987327 187.22.129.241 19496 typ srflx raddr 0.0.0.0 rport 0","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.542 <- player 101: iceCandidate
+14:55:59.557 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:4 2 UDP 1685987326 187.22.129.241 19497 typ srflx raddr 0.0.0.0 rport 0","sdpMid":"1","sdpMLineIndex":1,"usernameFragment":"d0a68dae"}}
+14:55:59.558 <- player 101: iceCandidate
+14:55:59.565 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3923162290 1 tcp 1518283007 2804:14c:bf2f:8d61:853e:755c:557c:41c2 58425 typ host tcptype passive generation 0 ufrag mGLS network-id 2"}}
+14:55:59.589 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:4 1 UDP 1685987327 187.22.129.241 19498 typ srflx raddr 0.0.0.0 rport 0","sdpMid":"2","sdpMLineIndex":2,"usernameFragment":"d0a68dae"}}
+14:55:59.590 <- player 101: iceCandidate
+14:55:59.599 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2421739043 1 tcp 1518217471 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 58426 typ host tcptype passive generation 0 ufrag mGLS network-id 3"}}
+14:55:59.633 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 58427 typ host tcptype passive generation 0 ufrag mGLS network-id 1"}}
+14:55:59.666 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:1274936569 1 udp 1685921535 187.22.129.241 19501 typ srflx raddr 192.168.0.3 rport 62588 generation 0 ufrag mGLS network-id 1"}}
+14:56:45.618 <- Streamer: {"type":"ping","time":1653587805}
+14:57:05.907 player 102 (::1) connected
+14:57:06.278 <- player 102: {"type":"offer","sdp":"v=0\r\no=- 8375341032752706472 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 124 120 123 119 35 36 37 38 39 40 41 42 114 115 116 117 118 43\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:0GdR\r\na=ice-pwd:WNHzzIk+qPIwGE3gjochasQ7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F8:56:92:5A:68:12:71:06:21:C3:1D:2F:A1:F2:DA:AD:46:06:F4:9A:BD:AC:41:28:E4:AE:40:EC:2B:B4:BD:A1\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:102 VP9/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 profile-id=1\r\na=rtpmap:122 rtx/90000\r\na=fmtp:122 apt=102\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:121 rtx/90000\r\na=fmtp:121 apt=127\r\na=rtpmap:125 H264/90000\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:124 H264/90000\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:120 rtx/90000\r\na=fmtp:120 apt=124\r\na=rtpmap:123 H264/90000\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:119 rtx/90000\r\na=fmtp:119 apt=123\r\na=rtpmap:35 H264/90000\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=fmtp:35 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f\r\na=rtpmap:36 rtx/90000\r\na=fmtp:36 apt=35\r\na=rtpmap:37 H264/90000\r\na=rtcp-fb:37 goog-remb\r\na=rtcp-fb:37 transport-cc\r\na=rtcp-fb:37 ccm fir\r\na=rtcp-fb:37 nack\r\na=rtcp-fb:37 nack pli\r\na=fmtp:37 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=f4001f\r\na=rtpmap:38 rtx/90000\r\na=fmtp:38 apt=37\r\na=rtpmap:39 H264/90000\r\na=rtcp-fb:39 goog-remb\r\na=rtcp-fb:39 transport-cc\r\na=rtcp-fb:39 ccm fir\r\na=rtcp-fb:39 nack\r\na=rtcp-fb:39 nack pli\r\na=fmtp:39 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=f4001f\r\na=rtpmap:40 rtx/90000\r\na=fmtp:40 apt=39\r\na=rtpmap:41 AV1/90000\r\na=rtcp-fb:41 goog-remb\r\na=rtcp-fb:41 transport-cc\r\na=rtcp-fb:41 ccm fir\r\na=rtcp-fb:41 nack\r\na=rtcp-fb:41 nack pli\r\na=rtpmap:42 rtx/90000\r\na=fmtp:42 apt=41\r\na=rtpmap:114 H264/90000\r\na=rtcp-fb:114 goog-remb\r\na=rtcp-fb:114 transport-cc\r\na=rtcp-fb:114 ccm fir\r\na=rtcp-fb:114 nack\r\na=rtcp-fb:114 nack pli\r\na=fmtp:114 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=rtpmap:43 flexfec-03/90000\r\na=rtcp-fb:43 goog-remb\r\na=rtcp-fb:43 transport-cc\r\na=fmtp:43 repair-window=10000000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:0GdR\r\na=ice-pwd:WNHzzIk+qPIwGE3gjochasQ7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F8:56:92:5A:68:12:71:06:21:C3:1D:2F:A1:F2:DA:AD:46:06:F4:9A:BD:AC:41:28:E4:AE:40:EC:2B:B4:BD:A1\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1;stereo=1;sprop-maxcapturerate=48000\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:0GdR\r\na=ice-pwd:WNHzzIk+qPIwGE3gjochasQ7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F8:56:92:5A:68:12:71:06:21:C3:1D:2F:A1:F2:DA:AD:46:06:F4:9A:BD:AC:41:28:E4:AE:40:EC:2B:B4:BD:A1\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+14:57:06.282 <- player 102: offer
+14:57:06.307 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122262783 2804:14c:bf2f:8d61:853e:755c:557c:41c2 56143 typ host generation 0 ufrag 0GdR network-id 2","sdpMid":"0","sdpMLineIndex":0}}
+14:57:06.308 <- player 102: iceCandidate
+14:57:06.326 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3738907347 1 udp 2122197247 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 56144 typ host generation 0 ufrag 0GdR network-id 3","sdpMid":"0","sdpMLineIndex":0}}
+14:57:06.330 <- player 102: iceCandidate
+14:57:06.331 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 56145 typ host generation 0 ufrag 0GdR network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+14:57:06.332 <- player 102: iceCandidate
+14:57:06.333 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122262783 2804:14c:bf2f:8d61:853e:755c:557c:41c2 56146 typ host generation 0 ufrag 0GdR network-id 2","sdpMid":"1","sdpMLineIndex":1}}
+14:57:06.333 <- player 102: iceCandidate
+14:57:06.334 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3738907347 1 udp 2122197247 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 56147 typ host generation 0 ufrag 0GdR network-id 3","sdpMid":"1","sdpMLineIndex":1}}
+14:57:06.335 <- player 102: iceCandidate
+14:57:06.336 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 56148 typ host generation 0 ufrag 0GdR network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+14:57:06.336 <- player 102: iceCandidate
+14:57:06.337 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122262783 2804:14c:bf2f:8d61:853e:755c:557c:41c2 56149 typ host generation 0 ufrag 0GdR network-id 2","sdpMid":"2","sdpMLineIndex":2}}
+14:57:06.338 <- player 102: iceCandidate
+14:57:06.338 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3738907347 1 udp 2122197247 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 56150 typ host generation 0 ufrag 0GdR network-id 3","sdpMid":"2","sdpMLineIndex":2}}
+14:57:06.342 <- player 102: iceCandidate
+14:57:06.343 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 56151 typ host generation 0 ufrag 0GdR network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+14:57:06.344 <- player 102: iceCandidate
+14:57:06.346 <- Streamer: {"type":"answer","playerId":102,"sdp":"v=0\r\no=- 5825758980511812574 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 108 109 116 117 118\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:a07l\r\na=ice-pwd:4GfeNCDuKjjx90x8Uc5PlCNM\r\na=ice-options:trickle\r\na=fingerprint:sha-256 78:6F:97:28:81:18:2A:DF:1C:22:20:34:6F:EC:6B:82:92:1C:8A:65:33:89:97:6C:7B:E3:94:3C:A6:B0:2F:44\r\na=setup:active\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=ssrc-group:FID 425268390 1892595910\r\na=ssrc:425268390 cname:vnrbegB1NAbosMvn\r\na=ssrc:425268390 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:425268390 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:425268390 label:pixelstreaming_video_track_label\r\na=ssrc:1892595910 cname:vnrbegB1NAbosMvn\r\na=ssrc:1892595910 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:1892595910 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:1892595910 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:a07l\r\na=ice-pwd:4GfeNCDuKjjx90x8Uc5PlCNM\r\na=ice-options:trickle\r\na=fingerprint:sha-256 78:6F:97:28:81:18:2A:DF:1C:22:20:34:6F:EC:6B:82:92:1C:8A:65:33:89:97:6C:7B:E3:94:3C:A6:B0:2F:44\r\na=setup:active\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendonly\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:2687610889 cname:vnrbegB1NAbosMvn\r\na=ssrc:2687610889 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:2687610889 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:2687610889 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\nb=AS:30\r\na=ice-ufrag:a07l\r\na=ice-pwd:4GfeNCDuKjjx90x8Uc5PlCNM\r\na=ice-options:trickle\r\na=fingerprint:sha-256 78:6F:97:28:81:18:2A:DF:1C:22:20:34:6F:EC:6B:82:92:1C:8A:65:33:89:97:6C:7B:E3:94:3C:A6:B0:2F:44\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+14:57:06.376 <- Streamer: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2807384130 1 udp 2122262783 2804:14c:bf2f:8d61:853e:755c:557c:41c2 56152 typ host generation 0 ufrag a07l network-id 2"}}
+14:57:06.409 <- Streamer: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3738907347 1 udp 2122197247 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 56153 typ host generation 0 ufrag a07l network-id 3"}}
+14:57:06.436 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518283007 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 0GdR network-id 2","sdpMid":"0","sdpMLineIndex":0}}
+14:57:06.438 <- player 102: iceCandidate
+14:57:06.439 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2421739043 1 tcp 1518217471 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 9 typ host tcptype active generation 0 ufrag 0GdR network-id 3","sdpMid":"0","sdpMLineIndex":0}}
+14:57:06.440 <- player 102: iceCandidate
+14:57:06.440 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 0GdR network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+14:57:06.440 <- player 102: iceCandidate
+14:57:06.441 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518283007 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 0GdR network-id 2","sdpMid":"1","sdpMLineIndex":1}}
+14:57:06.442 <- player 102: iceCandidate
+14:57:06.442 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2421739043 1 tcp 1518217471 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 9 typ host tcptype active generation 0 ufrag 0GdR network-id 3","sdpMid":"1","sdpMLineIndex":1}}
+14:57:06.443 <- player 102: iceCandidate
+14:57:06.443 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 0GdR network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+14:57:06.443 <- player 102: iceCandidate
+14:57:06.444 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518283007 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 0GdR network-id 2","sdpMid":"2","sdpMLineIndex":2}}
+14:57:06.444 <- player 102: iceCandidate
+14:57:06.445 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2421739043 1 tcp 1518217471 2804:14c:bf2f:8d61:d155:ee3a:a521:e8d7 9 typ host tcptype active generation 0 ufrag 0GdR network-id 3","sdpMid":"2","sdpMLineIndex":2}}
+14:57:06.445 <- player 102: iceCandidate
+14:57:06.446 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 0GdR network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+14:57:06.446 <- player 102: iceCandidate
+14:57:06.448 <- Streamer: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 56154 typ host generation 0 ufrag a07l network-id 1"}}
+14:57:06.571 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:1274936569 1 udp 1685921535 187.22.129.241 19548 typ srflx raddr 192.168.0.3 rport 56145 generation 0 ufrag 0GdR network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+14:57:06.576 <- player 102: iceCandidate
+14:57:06.595 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:1274936569 1 udp 1685921535 187.22.129.241 19550 typ srflx raddr 192.168.0.3 rport 56151 generation 0 ufrag 0GdR network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+14:57:06.596 <- player 102: iceCandidate
+14:57:06.597 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:1274936569 1 udp 1685921535 187.22.129.241 19549 typ srflx raddr 192.168.0.3 rport 56148 generation 0 ufrag 0GdR network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+14:57:06.598 <- player 102: iceCandidate
+14:57:45.613 <- Streamer: {"type":"ping","time":1653587865}
+14:58:27.909 player 102 connection closed: 1001 - 
+14:58:45.603 <- Streamer: {"type":"ping","time":1653587925}
+14:59:45.605 <- Streamer: {"type":"ping","time":1653587985}
+15:00:45.612 <- Streamer: {"type":"ping","time":1653588045}
+15:01:45.615 <- Streamer: {"type":"ping","time":1653588105}
+15:02:45.598 <- Streamer: {"type":"ping","time":1653588165}
+15:03:28.092 player 101 connection closed: 1006 - 
+15:03:45.617 <- Streamer: {"type":"ping","time":1653588225}
+15:04:45.623 <- Streamer: {"type":"ping","time":1653588285}
+15:05:45.616 <- Streamer: {"type":"ping","time":1653588345}
+15:06:45.597 <- Streamer: {"type":"ping","time":1653588405}
+15:07:45.610 <- Streamer: {"type":"ping","time":1653588465}
+15:08:45.588 <- Streamer: {"type":"ping","time":1653588525}
+15:09:45.596 <- Streamer: {"type":"ping","time":1653588585}
+15:10:45.603 <- Streamer: {"type":"ping","time":1653588645}
+15:11:45.611 <- Streamer: {"type":"ping","time":1653588705}
+15:12:45.589 <- Streamer: {"type":"ping","time":1653588765}
+15:13:45.595 <- Streamer: {"type":"ping","time":1653588825}
+15:14:45.586 <- Streamer: {"type":"ping","time":1653588885}
+15:15:45.589 <- Streamer: {"type":"ping","time":1653588945}
+15:16:45.611 <- Streamer: {"type":"ping","time":1653589005}
+15:17:45.606 <- Streamer: {"type":"ping","time":1653589065}
+15:18:45.593 <- Streamer: {"type":"ping","time":1653589125}
+15:19:45.586 <- Streamer: {"type":"ping","time":1653589185}
+15:20:45.595 <- Streamer: {"type":"ping","time":1653589245}
+15:21:45.596 <- Streamer: {"type":"ping","time":1653589305}
+15:22:45.595 <- Streamer: {"type":"ping","time":1653589365}
+15:23:45.593 <- Streamer: {"type":"ping","time":1653589425}
+15:24:45.596 <- Streamer: {"type":"ping","time":1653589485}
+15:25:45.596 <- Streamer: {"type":"ping","time":1653589545}
+15:26:45.607 <- Streamer: {"type":"ping","time":1653589605}
+15:27:45.585 <- Streamer: {"type":"ping","time":1653589665}
+15:28:45.603 <- Streamer: {"type":"ping","time":1653589725}
+15:29:45.616 <- Streamer: {"type":"ping","time":1653589785}
+15:30:45.602 <- Streamer: {"type":"ping","time":1653589845}
+15:31:45.603 <- Streamer: {"type":"ping","time":1653589905}
+15:32:45.601 <- Streamer: {"type":"ping","time":1653589965}
+15:33:45.607 <- Streamer: {"type":"ping","time":1653590025}
+15:34:45.598 <- Streamer: {"type":"ping","time":1653590085}
+15:35:45.597 <- Streamer: {"type":"ping","time":1653590145}
+15:36:45.603 <- Streamer: {"type":"ping","time":1653590205}
+15:37:45.611 <- Streamer: {"type":"ping","time":1653590265}
+15:38:45.609 <- Streamer: {"type":"ping","time":1653590325}
+15:39:45.597 <- Streamer: {"type":"ping","time":1653590385}
+15:40:45.591 <- Streamer: {"type":"ping","time":1653590445}
+15:41:45.601 <- Streamer: {"type":"ping","time":1653590505}
+15:42:45.608 <- Streamer: {"type":"ping","time":1653590565}
+15:43:45.582 <- Streamer: {"type":"ping","time":1653590625}
+15:44:45.589 <- Streamer: {"type":"ping","time":1653590685}
+15:45:45.601 <- Streamer: {"type":"ping","time":1653590745}
+15:46:45.613 <- Streamer: {"type":"ping","time":1653590805}
+15:47:45.601 <- Streamer: {"type":"ping","time":1653590865}
+15:48:45.578 <- Streamer: {"type":"ping","time":1653590925}
+15:49:45.594 <- Streamer: {"type":"ping","time":1653590985}
+15:50:45.609 <- Streamer: {"type":"ping","time":1653591045}
+15:51:45.613 <- Streamer: {"type":"ping","time":1653591105}
+15:52:45.618 <- Streamer: {"type":"ping","time":1653591165}
+15:53:45.607 <- Streamer: {"type":"ping","time":1653591225}
+15:54:45.611 <- Streamer: {"type":"ping","time":1653591285}
+15:55:45.598 <- Streamer: {"type":"ping","time":1653591345}
+15:56:45.613 <- Streamer: {"type":"ping","time":1653591405}
+15:57:45.600 <- Streamer: {"type":"ping","time":1653591465}
+15:58:45.588 <- Streamer: {"type":"ping","time":1653591525}
+15:59:45.601 <- Streamer: {"type":"ping","time":1653591585}
+16:00:45.590 <- Streamer: {"type":"ping","time":1653591645}
+16:01:45.592 <- Streamer: {"type":"ping","time":1653591705}
+16:02:45.619 <- Streamer: {"type":"ping","time":1653591765}
+16:03:45.594 <- Streamer: {"type":"ping","time":1653591825}
+16:04:45.580 <- Streamer: {"type":"ping","time":1653591885}
+16:05:45.616 <- Streamer: {"type":"ping","time":1653591945}
+16:06:45.607 <- Streamer: {"type":"ping","time":1653592005}
+16:07:45.579 <- Streamer: {"type":"ping","time":1653592065}
+16:08:45.609 <- Streamer: {"type":"ping","time":1653592125}
+16:09:45.586 <- Streamer: {"type":"ping","time":1653592185}
+16:10:45.589 <- Streamer: {"type":"ping","time":1653592245}
+16:11:45.606 <- Streamer: {"type":"ping","time":1653592305}
+16:12:45.600 <- Streamer: {"type":"ping","time":1653592365}
+16:13:45.586 <- Streamer: {"type":"ping","time":1653592425}
+16:14:45.608 <- Streamer: {"type":"ping","time":1653592485}
+16:15:45.599 <- Streamer: {"type":"ping","time":1653592545}
+16:16:45.609 <- Streamer: {"type":"ping","time":1653592605}
+16:17:45.589 <- Streamer: {"type":"ping","time":1653592665}
+16:18:45.614 <- Streamer: {"type":"ping","time":1653592725}
+16:19:45.592 <- Streamer: {"type":"ping","time":1653592785}
+16:20:45.601 <- Streamer: {"type":"ping","time":1653592845}
+16:21:45.608 <- Streamer: {"type":"ping","time":1653592905}
+16:22:45.621 <- Streamer: {"type":"ping","time":1653592965}
+16:23:45.605 <- Streamer: {"type":"ping","time":1653593025}
+16:24:45.595 <- Streamer: {"type":"ping","time":1653593085}
+16:25:45.597 <- Streamer: {"type":"ping","time":1653593145}
+16:26:45.605 <- Streamer: {"type":"ping","time":1653593205}
+16:27:45.589 <- Streamer: {"type":"ping","time":1653593265}
+16:28:45.622 <- Streamer: {"type":"ping","time":1653593325}
+16:29:45.589 <- Streamer: {"type":"ping","time":1653593385}
+16:30:45.611 <- Streamer: {"type":"ping","time":1653593445}
+16:31:45.603 <- Streamer: {"type":"ping","time":1653593505}
+16:32:45.590 <- Streamer: {"type":"ping","time":1653593565}
+16:33:45.593 <- Streamer: {"type":"ping","time":1653593625}
+16:34:45.597 <- Streamer: {"type":"ping","time":1653593685}
+16:35:45.595 <- Streamer: {"type":"ping","time":1653593745}
+16:36:45.624 <- Streamer: {"type":"ping","time":1653593805}
+16:37:45.601 <- Streamer: {"type":"ping","time":1653593865}
+16:38:45.603 <- Streamer: {"type":"ping","time":1653593925}
+16:39:45.610 <- Streamer: {"type":"ping","time":1653593985}
+16:40:45.605 <- Streamer: {"type":"ping","time":1653594045}
+16:41:45.600 <- Streamer: {"type":"ping","time":1653594105}
+16:42:45.618 <- Streamer: {"type":"ping","time":1653594165}
+16:43:45.590 <- Streamer: {"type":"ping","time":1653594225}
+16:44:45.587 <- Streamer: {"type":"ping","time":1653594285}
+16:45:45.593 <- Streamer: {"type":"ping","time":1653594345}
+16:46:45.617 <- Streamer: {"type":"ping","time":1653594405}
+16:47:45.606 <- Streamer: {"type":"ping","time":1653594465}
+16:48:45.605 <- Streamer: {"type":"ping","time":1653594525}
+16:49:45.620 <- Streamer: {"type":"ping","time":1653594585}
+16:50:45.592 <- Streamer: {"type":"ping","time":1653594645}
+16:51:45.614 <- Streamer: {"type":"ping","time":1653594705}
+16:52:45.593 <- Streamer: {"type":"ping","time":1653594765}
+16:53:45.598 <- Streamer: {"type":"ping","time":1653594825}
+16:54:45.596 <- Streamer: {"type":"ping","time":1653594885}
+16:55:45.586 <- Streamer: {"type":"ping","time":1653594945}
+16:56:45.600 <- Streamer: {"type":"ping","time":1653595005}
+16:57:45.596 <- Streamer: {"type":"ping","time":1653595065}
+16:58:45.613 <- Streamer: {"type":"ping","time":1653595125}
+16:59:45.611 <- Streamer: {"type":"ping","time":1653595185}
+17:00:45.598 <- Streamer: {"type":"ping","time":1653595245}
+17:01:45.617 <- Streamer: {"type":"ping","time":1653595305}
+17:02:45.613 <- Streamer: {"type":"ping","time":1653595365}
+17:03:45.595 <- Streamer: {"type":"ping","time":1653595425}
+17:04:45.609 <- Streamer: {"type":"ping","time":1653595485}
+17:05:45.616 <- Streamer: {"type":"ping","time":1653595545}
+17:06:45.591 <- Streamer: {"type":"ping","time":1653595605}
+17:07:45.602 <- Streamer: {"type":"ping","time":1653595665}
+17:08:45.616 <- Streamer: {"type":"ping","time":1653595725}
+17:09:45.606 <- Streamer: {"type":"ping","time":1653595785}
+17:10:45.608 <- Streamer: {"type":"ping","time":1653595845}
+17:11:45.590 <- Streamer: {"type":"ping","time":1653595905}
+17:12:45.592 <- Streamer: {"type":"ping","time":1653595965}
+17:13:45.586 <- Streamer: {"type":"ping","time":1653596025}
+17:14:45.611 <- Streamer: {"type":"ping","time":1653596085}
+17:15:45.621 <- Streamer: {"type":"ping","time":1653596145}
+17:16:45.598 <- Streamer: {"type":"ping","time":1653596205}
+17:17:45.608 <- Streamer: {"type":"ping","time":1653596265}
+17:18:45.621 <- Streamer: {"type":"ping","time":1653596325}
+17:19:45.619 <- Streamer: {"type":"ping","time":1653596385}
+17:20:45.606 <- Streamer: {"type":"ping","time":1653596445}
+17:21:45.607 <- Streamer: {"type":"ping","time":1653596505}
+17:22:45.596 <- Streamer: {"type":"ping","time":1653596565}
+17:23:45.602 <- Streamer: {"type":"ping","time":1653596625}
+17:24:45.587 <- Streamer: {"type":"ping","time":1653596685}
+17:25:45.608 <- Streamer: {"type":"ping","time":1653596745}
+17:26:45.591 <- Streamer: {"type":"ping","time":1653596805}
+17:27:45.608 <- Streamer: {"type":"ping","time":1653596865}
+17:28:45.597 <- Streamer: {"type":"ping","time":1653596925}
+17:29:45.620 <- Streamer: {"type":"ping","time":1653596985}
+17:30:45.600 <- Streamer: {"type":"ping","time":1653597045}
+17:31:45.623 <- Streamer: {"type":"ping","time":1653597105}
+17:32:45.592 <- Streamer: {"type":"ping","time":1653597165}
+17:33:45.586 <- Streamer: {"type":"ping","time":1653597225}
+17:34:45.620 <- Streamer: {"type":"ping","time":1653597285}
+17:35:45.598 <- Streamer: {"type":"ping","time":1653597345}
+17:36:45.606 <- Streamer: {"type":"ping","time":1653597405}
+17:37:45.623 <- Streamer: {"type":"ping","time":1653597465}
+17:38:45.582 <- Streamer: {"type":"ping","time":1653597525}
+17:39:45.610 <- Streamer: {"type":"ping","time":1653597585}
+17:40:45.603 <- Streamer: {"type":"ping","time":1653597645}
+17:41:45.585 <- Streamer: {"type":"ping","time":1653597705}
+17:42:45.603 <- Streamer: {"type":"ping","time":1653597765}
+17:43:45.615 <- Streamer: {"type":"ping","time":1653597825}
+17:44:45.590 <- Streamer: {"type":"ping","time":1653597885}
+17:45:45.612 <- Streamer: {"type":"ping","time":1653597945}
+17:46:45.596 <- Streamer: {"type":"ping","time":1653598005}
+17:47:45.583 <- Streamer: {"type":"ping","time":1653598065}
+17:48:45.590 <- Streamer: {"type":"ping","time":1653598125}
+17:49:45.596 <- Streamer: {"type":"ping","time":1653598185}
+17:50:45.596 <- Streamer: {"type":"ping","time":1653598245}
+17:51:45.609 <- Streamer: {"type":"ping","time":1653598305}
+17:52:45.603 <- Streamer: {"type":"ping","time":1653598365}
+17:53:45.591 <- Streamer: {"type":"ping","time":1653598425}
+17:54:45.595 <- Streamer: {"type":"ping","time":1653598485}
+17:55:45.590 <- Streamer: {"type":"ping","time":1653598545}
+17:56:45.590 <- Streamer: {"type":"ping","time":1653598605}
+17:57:45.607 <- Streamer: {"type":"ping","time":1653598665}
+17:58:45.611 <- Streamer: {"type":"ping","time":1653598725}
+17:59:45.586 <- Streamer: {"type":"ping","time":1653598785}
+18:00:45.616 <- Streamer: {"type":"ping","time":1653598845}
+18:01:45.595 <- Streamer: {"type":"ping","time":1653598905}
+18:02:45.599 <- Streamer: {"type":"ping","time":1653598965}
+18:03:45.609 <- Streamer: {"type":"ping","time":1653599025}
+18:04:45.611 <- Streamer: {"type":"ping","time":1653599085}
+18:05:45.608 <- Streamer: {"type":"ping","time":1653599145}
+18:06:45.586 <- Streamer: {"type":"ping","time":1653599205}
+18:07:45.618 <- Streamer: {"type":"ping","time":1653599265}
+18:08:45.592 <- Streamer: {"type":"ping","time":1653599325}
+18:09:45.591 <- Streamer: {"type":"ping","time":1653599385}
+18:10:45.605 <- Streamer: {"type":"ping","time":1653599445}
+18:11:45.590 <- Streamer: {"type":"ping","time":1653599505}
+18:12:45.590 <- Streamer: {"type":"ping","time":1653599565}
+18:13:45.600 <- Streamer: {"type":"ping","time":1653599625}
+18:14:45.619 <- Streamer: {"type":"ping","time":1653599685}
+18:15:45.580 <- Streamer: {"type":"ping","time":1653599745}
+18:16:45.611 <- Streamer: {"type":"ping","time":1653599805}
+18:17:45.595 <- Streamer: {"type":"ping","time":1653599865}
+18:18:45.619 <- Streamer: {"type":"ping","time":1653599925}
+18:19:45.620 <- Streamer: {"type":"ping","time":1653599985}
+18:20:45.605 <- Streamer: {"type":"ping","time":1653600045}
+18:21:45.612 <- Streamer: {"type":"ping","time":1653600105}
+18:22:45.616 <- Streamer: {"type":"ping","time":1653600165}
+18:23:45.595 <- Streamer: {"type":"ping","time":1653600225}
+18:24:45.602 <- Streamer: {"type":"ping","time":1653600285}
+18:25:45.609 <- Streamer: {"type":"ping","time":1653600345}
+18:26:45.596 <- Streamer: {"type":"ping","time":1653600405}
+18:27:45.585 <- Streamer: {"type":"ping","time":1653600465}
+18:28:45.613 <- Streamer: {"type":"ping","time":1653600525}
+18:29:45.592 <- Streamer: {"type":"ping","time":1653600585}
+18:30:45.589 <- Streamer: {"type":"ping","time":1653600645}
+18:31:45.600 <- Streamer: {"type":"ping","time":1653600705}
+18:32:45.596 <- Streamer: {"type":"ping","time":1653600765}
+18:33:45.625 <- Streamer: {"type":"ping","time":1653600825}
+18:34:45.602 <- Streamer: {"type":"ping","time":1653600885}
+18:35:45.612 <- Streamer: {"type":"ping","time":1653600945}
+18:36:45.597 <- Streamer: {"type":"ping","time":1653601005}
+18:37:45.595 <- Streamer: {"type":"ping","time":1653601065}
+18:38:45.611 <- Streamer: {"type":"ping","time":1653601125}
+18:39:45.590 <- Streamer: {"type":"ping","time":1653601185}
+18:40:45.596 <- Streamer: {"type":"ping","time":1653601245}
+18:41:45.595 <- Streamer: {"type":"ping","time":1653601305}
+18:42:45.586 <- Streamer: {"type":"ping","time":1653601365}
+18:43:45.608 <- Streamer: {"type":"ping","time":1653601425}
+18:44:45.610 <- Streamer: {"type":"ping","time":1653601485}
+18:45:45.622 <- Streamer: {"type":"ping","time":1653601545}
+18:46:45.610 <- Streamer: {"type":"ping","time":1653601605}
+18:47:45.597 <- Streamer: {"type":"ping","time":1653601665}
+18:48:45.610 <- Streamer: {"type":"ping","time":1653601725}
+18:49:45.591 <- Streamer: {"type":"ping","time":1653601785}
+18:50:45.587 <- Streamer: {"type":"ping","time":1653601845}
+18:51:45.611 <- Streamer: {"type":"ping","time":1653601905}
+18:52:45.587 <- Streamer: {"type":"ping","time":1653601965}
+18:53:45.595 <- Streamer: {"type":"ping","time":1653602025}
+18:54:45.596 <- Streamer: {"type":"ping","time":1653602085}
+18:55:45.607 <- Streamer: {"type":"ping","time":1653602145}
+18:56:45.598 <- Streamer: {"type":"ping","time":1653602205}
+18:57:45.614 <- Streamer: {"type":"ping","time":1653602265}
+18:58:45.596 <- Streamer: {"type":"ping","time":1653602325}
+18:59:45.595 <- Streamer: {"type":"ping","time":1653602385}
+19:00:45.612 <- Streamer: {"type":"ping","time":1653602445}
+19:01:45.590 <- Streamer: {"type":"ping","time":1653602505}
+19:02:45.603 <- Streamer: {"type":"ping","time":1653602565}
+19:03:45.610 <- Streamer: {"type":"ping","time":1653602625}
+19:04:45.604 <- Streamer: {"type":"ping","time":1653602685}
+19:05:45.604 <- Streamer: {"type":"ping","time":1653602745}
+19:06:45.584 <- Streamer: {"type":"ping","time":1653602805}
+19:07:45.617 <- Streamer: {"type":"ping","time":1653602865}
+19:08:45.586 <- Streamer: {"type":"ping","time":1653602925}
+19:09:45.601 <- Streamer: {"type":"ping","time":1653602985}
+19:10:45.607 <- Streamer: {"type":"ping","time":1653603045}
+19:11:45.608 <- Streamer: {"type":"ping","time":1653603105}
+19:12:45.588 <- Streamer: {"type":"ping","time":1653603165}
+19:13:45.605 <- Streamer: {"type":"ping","time":1653603225}
+19:14:45.599 <- Streamer: {"type":"ping","time":1653603285}
+19:15:45.583 <- Streamer: {"type":"ping","time":1653603345}
+19:16:45.597 <- Streamer: {"type":"ping","time":1653603405}
+19:17:45.596 <- Streamer: {"type":"ping","time":1653603465}
+19:18:45.593 <- Streamer: {"type":"ping","time":1653603525}
+19:19:45.616 <- Streamer: {"type":"ping","time":1653603585}
+19:20:45.588 <- Streamer: {"type":"ping","time":1653603645}
+19:21:45.596 <- Streamer: {"type":"ping","time":1653603705}
+19:22:45.593 <- Streamer: {"type":"ping","time":1653603765}
+19:23:45.617 <- Streamer: {"type":"ping","time":1653603825}
+19:24:45.586 <- Streamer: {"type":"ping","time":1653603885}
+19:25:45.602 <- Streamer: {"type":"ping","time":1653603945}
+19:26:45.617 <- Streamer: {"type":"ping","time":1653604005}
+19:27:45.593 <- Streamer: {"type":"ping","time":1653604065}
+19:28:45.609 <- Streamer: {"type":"ping","time":1653604125}
+19:29:45.583 <- Streamer: {"type":"ping","time":1653604185}
+19:30:45.614 <- Streamer: {"type":"ping","time":1653604245}
+19:31:45.608 <- Streamer: {"type":"ping","time":1653604305}
+19:32:45.614 <- Streamer: {"type":"ping","time":1653604365}
+19:33:45.617 <- Streamer: {"type":"ping","time":1653604425}
+19:34:45.583 <- Streamer: {"type":"ping","time":1653604485}
+19:35:45.592 <- Streamer: {"type":"ping","time":1653604545}
+19:36:45.616 <- Streamer: {"type":"ping","time":1653604605}
+19:37:45.589 <- Streamer: {"type":"ping","time":1653604665}
+19:38:45.605 <- Streamer: {"type":"ping","time":1653604725}
+19:39:45.610 <- Streamer: {"type":"ping","time":1653604785}
+19:40:45.605 <- Streamer: {"type":"ping","time":1653604845}
+19:41:45.589 <- Streamer: {"type":"ping","time":1653604905}
+19:42:45.603 <- Streamer: {"type":"ping","time":1653604965}
+19:43:45.610 <- Streamer: {"type":"ping","time":1653605025}
+19:44:45.600 <- Streamer: {"type":"ping","time":1653605085}
+19:45:45.616 <- Streamer: {"type":"ping","time":1653605145}
+19:46:46.160 <- Streamer: {"type":"ping","time":1653605206}
+19:47:46.182 <- Streamer: {"type":"ping","time":1653605266}
+19:48:46.185 <- Streamer: {"type":"ping","time":1653605326}
+19:49:46.178 <- Streamer: {"type":"ping","time":1653605386}
+19:50:46.176 <- Streamer: {"type":"ping","time":1653605446}
+19:51:46.176 <- Streamer: {"type":"ping","time":1653605506}
+19:52:46.186 <- Streamer: {"type":"ping","time":1653605566}
+19:53:46.167 <- Streamer: {"type":"ping","time":1653605626}
+19:54:46.182 <- Streamer: {"type":"ping","time":1653605686}
+19:55:46.182 <- Streamer: {"type":"ping","time":1653605746}
+19:56:46.158 <- Streamer: {"type":"ping","time":1653605806}
+19:57:46.195 <- Streamer: {"type":"ping","time":1653605866}
+19:58:46.168 <- Streamer: {"type":"ping","time":1653605926}
+19:59:46.178 <- Streamer: {"type":"ping","time":1653605986}
+20:00:46.182 <- Streamer: {"type":"ping","time":1653606046}
+20:01:46.167 <- Streamer: {"type":"ping","time":1653606106}
+20:02:46.169 <- Streamer: {"type":"ping","time":1653606166}
+20:03:46.180 <- Streamer: {"type":"ping","time":1653606226}
+20:04:46.181 <- Streamer: {"type":"ping","time":1653606286}
+20:05:46.180 <- Streamer: {"type":"ping","time":1653606346}
+20:06:46.166 <- Streamer: {"type":"ping","time":1653606406}
+20:07:46.172 <- Streamer: {"type":"ping","time":1653606466}
+20:08:46.169 <- Streamer: {"type":"ping","time":1653606526}
+20:09:46.155 <- Streamer: {"type":"ping","time":1653606586}
+20:10:46.167 <- Streamer: {"type":"ping","time":1653606646}
+20:11:46.161 <- Streamer: {"type":"ping","time":1653606706}
+20:12:46.179 <- Streamer: {"type":"ping","time":1653606766}
+20:13:46.161 <- Streamer: {"type":"ping","time":1653606826}
+20:14:46.192 <- Streamer: {"type":"ping","time":1653606886}
+20:15:46.170 <- Streamer: {"type":"ping","time":1653606946}
+20:16:46.188 <- Streamer: {"type":"ping","time":1653607006}
+20:17:46.185 <- Streamer: {"type":"ping","time":1653607066}
+20:18:46.154 <- Streamer: {"type":"ping","time":1653607126}
+20:19:46.170 <- Streamer: {"type":"ping","time":1653607186}
+20:20:46.191 <- Streamer: {"type":"ping","time":1653607246}
+20:21:46.177 <- Streamer: {"type":"ping","time":1653607306}
+20:22:46.183 <- Streamer: {"type":"ping","time":1653607366}
+20:23:46.159 <- Streamer: {"type":"ping","time":1653607426}
+20:24:46.166 <- Streamer: {"type":"ping","time":1653607486}
+20:25:46.183 <- Streamer: {"type":"ping","time":1653607546}
+20:26:46.189 <- Streamer: {"type":"ping","time":1653607606}
+20:27:46.167 <- Streamer: {"type":"ping","time":1653607666}
+20:28:46.194 <- Streamer: {"type":"ping","time":1653607726}
+20:29:46.165 <- Streamer: {"type":"ping","time":1653607786}
+20:30:46.180 <- Streamer: {"type":"ping","time":1653607846}
+20:31:46.188 <- Streamer: {"type":"ping","time":1653607906}
+20:32:46.186 <- Streamer: {"type":"ping","time":1653607966}
+20:33:46.168 <- Streamer: {"type":"ping","time":1653608026}
+20:34:46.160 <- Streamer: {"type":"ping","time":1653608086}
+20:35:46.185 <- Streamer: {"type":"ping","time":1653608146}
+20:36:46.167 <- Streamer: {"type":"ping","time":1653608206}
+20:37:46.152 <- Streamer: {"type":"ping","time":1653608266}
+20:38:46.186 <- Streamer: {"type":"ping","time":1653608326}
+20:39:46.159 <- Streamer: {"type":"ping","time":1653608386}
+20:40:46.169 <- Streamer: {"type":"ping","time":1653608446}
+20:41:46.171 <- Streamer: {"type":"ping","time":1653608506}
+20:42:46.166 <- Streamer: {"type":"ping","time":1653608566}
+20:43:46.193 <- Streamer: {"type":"ping","time":1653608626}
+20:44:46.174 <- Streamer: {"type":"ping","time":1653608686}
+20:45:46.167 <- Streamer: {"type":"ping","time":1653608746}
+20:46:46.170 <- Streamer: {"type":"ping","time":1653608806}
+20:47:46.169 <- Streamer: {"type":"ping","time":1653608866}
+20:48:46.154 <- Streamer: {"type":"ping","time":1653608926}
+20:49:46.175 <- Streamer: {"type":"ping","time":1653608986}
+20:50:46.161 <- Streamer: {"type":"ping","time":1653609046}
+20:51:46.161 <- Streamer: {"type":"ping","time":1653609106}
+20:52:46.163 <- Streamer: {"type":"ping","time":1653609166}
+20:53:46.171 <- Streamer: {"type":"ping","time":1653609226}
+20:54:46.179 <- Streamer: {"type":"ping","time":1653609286}
+20:55:46.183 <- Streamer: {"type":"ping","time":1653609346}
+20:56:46.189 <- Streamer: {"type":"ping","time":1653609406}
+20:57:46.169 <- Streamer: {"type":"ping","time":1653609466}
+20:58:46.165 <- Streamer: {"type":"ping","time":1653609526}
+20:59:46.181 <- Streamer: {"type":"ping","time":1653609586}
+21:00:46.172 <- Streamer: {"type":"ping","time":1653609646}
+21:01:46.186 <- Streamer: {"type":"ping","time":1653609706}
+21:02:46.182 <- Streamer: {"type":"ping","time":1653609766}
+21:03:46.164 <- Streamer: {"type":"ping","time":1653609826}
+21:04:46.166 <- Streamer: {"type":"ping","time":1653609886}
+21:05:46.185 <- Streamer: {"type":"ping","time":1653609946}
+21:06:46.173 <- Streamer: {"type":"ping","time":1653610006}
+21:07:46.161 <- Streamer: {"type":"ping","time":1653610066}
+21:08:46.181 <- Streamer: {"type":"ping","time":1653610126}
+21:09:46.163 <- Streamer: {"type":"ping","time":1653610186}
+21:10:46.165 <- Streamer: {"type":"ping","time":1653610246}
+21:11:46.187 <- Streamer: {"type":"ping","time":1653610306}
+21:12:46.193 <- Streamer: {"type":"ping","time":1653610366}
+21:13:46.168 <- Streamer: {"type":"ping","time":1653610426}
+21:14:46.181 <- Streamer: {"type":"ping","time":1653610486}
+21:15:46.189 <- Streamer: {"type":"ping","time":1653610546}
+21:16:46.171 <- Streamer: {"type":"ping","time":1653610606}
+21:17:46.186 <- Streamer: {"type":"ping","time":1653610666}
+21:18:46.182 <- Streamer: {"type":"ping","time":1653610726}
+21:19:46.153 <- Streamer: {"type":"ping","time":1653610786}
+21:20:46.188 <- Streamer: {"type":"ping","time":1653610846}
+21:21:46.173 <- Streamer: {"type":"ping","time":1653610906}
+21:22:46.175 <- Streamer: {"type":"ping","time":1653610966}
+21:23:46.160 <- Streamer: {"type":"ping","time":1653611026}
+21:24:46.164 <- Streamer: {"type":"ping","time":1653611086}
+21:25:46.197 <- Streamer: {"type":"ping","time":1653611146}
+21:26:46.158 <- Streamer: {"type":"ping","time":1653611206}
+21:27:46.165 <- Streamer: {"type":"ping","time":1653611266}
+21:28:46.172 <- Streamer: {"type":"ping","time":1653611326}
+21:29:46.178 <- Streamer: {"type":"ping","time":1653611386}
+21:30:46.161 <- Streamer: {"type":"ping","time":1653611446}
+21:31:46.157 <- Streamer: {"type":"ping","time":1653611506}
+21:32:46.158 <- Streamer: {"type":"ping","time":1653611566}
+21:33:46.181 <- Streamer: {"type":"ping","time":1653611626}
+21:34:46.156 <- Streamer: {"type":"ping","time":1653611686}
+21:35:46.199 <- Streamer: {"type":"ping","time":1653611746}
+21:36:46.190 <- Streamer: {"type":"ping","time":1653611806}
+21:37:46.178 <- Streamer: {"type":"ping","time":1653611866}
+21:38:46.152 <- Streamer: {"type":"ping","time":1653611926}
+21:39:46.180 <- Streamer: {"type":"ping","time":1653611986}
+21:40:46.161 <- Streamer: {"type":"ping","time":1653612046}
+21:41:46.183 <- Streamer: {"type":"ping","time":1653612106}
+21:42:46.173 <- Streamer: {"type":"ping","time":1653612166}
+21:43:46.165 <- Streamer: {"type":"ping","time":1653612226}
+21:44:46.175 <- Streamer: {"type":"ping","time":1653612286}
+21:45:46.186 <- Streamer: {"type":"ping","time":1653612346}
+21:46:46.190 <- Streamer: {"type":"ping","time":1653612406}
+21:47:46.170 <- Streamer: {"type":"ping","time":1653612466}
+21:48:46.178 <- Streamer: {"type":"ping","time":1653612526}
+21:49:46.193 <- Streamer: {"type":"ping","time":1653612586}
+21:50:46.163 <- Streamer: {"type":"ping","time":1653612646}
+21:51:46.162 <- Streamer: {"type":"ping","time":1653612706}
+21:52:46.178 <- Streamer: {"type":"ping","time":1653612766}
+21:53:46.185 <- Streamer: {"type":"ping","time":1653612826}
+21:54:46.190 <- Streamer: {"type":"ping","time":1653612886}
+21:55:46.174 <- Streamer: {"type":"ping","time":1653612946}
+21:56:46.166 <- Streamer: {"type":"ping","time":1653613006}
+21:57:46.171 <- Streamer: {"type":"ping","time":1653613066}
+21:58:46.165 <- Streamer: {"type":"ping","time":1653613126}
+21:59:46.187 <- Streamer: {"type":"ping","time":1653613186}
+22:00:46.160 <- Streamer: {"type":"ping","time":1653613246}
+22:01:46.186 <- Streamer: {"type":"ping","time":1653613306}
+22:02:46.177 <- Streamer: {"type":"ping","time":1653613366}
+22:03:46.180 <- Streamer: {"type":"ping","time":1653613426}
+22:04:46.191 <- Streamer: {"type":"ping","time":1653613486}
+22:05:46.153 <- Streamer: {"type":"ping","time":1653613546}
+22:06:46.178 <- Streamer: {"type":"ping","time":1653613606}
+22:07:46.178 <- Streamer: {"type":"ping","time":1653613666}
+22:08:46.181 <- Streamer: {"type":"ping","time":1653613726}
+22:09:46.176 <- Streamer: {"type":"ping","time":1653613786}
+22:10:46.152 <- Streamer: {"type":"ping","time":1653613846}
+22:11:46.194 <- Streamer: {"type":"ping","time":1653613906}
+22:12:46.157 <- Streamer: {"type":"ping","time":1653613966}
+22:13:46.174 <- Streamer: {"type":"ping","time":1653614026}
+22:14:46.179 <- Streamer: {"type":"ping","time":1653614086}
+22:15:46.163 <- Streamer: {"type":"ping","time":1653614146}
+22:16:46.192 <- Streamer: {"type":"ping","time":1653614206}
+22:17:46.183 <- Streamer: {"type":"ping","time":1653614266}
+22:18:46.170 <- Streamer: {"type":"ping","time":1653614326}
+22:19:46.181 <- Streamer: {"type":"ping","time":1653614386}
+22:20:46.160 <- Streamer: {"type":"ping","time":1653614446}
+22:21:46.172 <- Streamer: {"type":"ping","time":1653614506}
+22:22:46.161 <- Streamer: {"type":"ping","time":1653614566}
+22:23:46.166 <- Streamer: {"type":"ping","time":1653614626}
+22:24:46.160 <- Streamer: {"type":"ping","time":1653614686}
+22:25:46.169 <- Streamer: {"type":"ping","time":1653614746}
+22:26:46.168 <- Streamer: {"type":"ping","time":1653614806}
+22:27:46.175 <- Streamer: {"type":"ping","time":1653614866}
+22:28:46.169 <- Streamer: {"type":"ping","time":1653614926}
+22:29:46.182 <- Streamer: {"type":"ping","time":1653614986}
+22:30:46.164 <- Streamer: {"type":"ping","time":1653615046}
+22:31:46.173 <- Streamer: {"type":"ping","time":1653615106}
+22:32:46.179 <- Streamer: {"type":"ping","time":1653615166}
+22:33:46.198 <- Streamer: {"type":"ping","time":1653615226}
+22:34:46.168 <- Streamer: {"type":"ping","time":1653615286}
+22:35:46.163 <- Streamer: {"type":"ping","time":1653615346}
+22:36:46.179 <- Streamer: {"type":"ping","time":1653615406}
+22:37:46.185 <- Streamer: {"type":"ping","time":1653615466}
+22:38:46.152 <- Streamer: {"type":"ping","time":1653615526}
+22:39:46.195 <- Streamer: {"type":"ping","time":1653615586}
+22:40:46.189 <- Streamer: {"type":"ping","time":1653615646}
+22:41:46.173 <- Streamer: {"type":"ping","time":1653615706}
+22:42:46.182 <- Streamer: {"type":"ping","time":1653615766}
+22:43:46.170 <- Streamer: {"type":"ping","time":1653615826}
+22:44:46.168 <- Streamer: {"type":"ping","time":1653615886}
+22:45:46.174 <- Streamer: {"type":"ping","time":1653615946}
+22:46:46.160 <- Streamer: {"type":"ping","time":1653616006}
+22:47:46.167 <- Streamer: {"type":"ping","time":1653616066}
+22:48:46.162 <- Streamer: {"type":"ping","time":1653616126}
+22:49:46.165 <- Streamer: {"type":"ping","time":1653616186}
+22:50:46.174 <- Streamer: {"type":"ping","time":1653616246}
+22:51:46.174 <- Streamer: {"type":"ping","time":1653616306}
+22:52:46.193 <- Streamer: {"type":"ping","time":1653616366}
+22:53:46.163 <- Streamer: {"type":"ping","time":1653616426}
+22:54:46.161 <- Streamer: {"type":"ping","time":1653616486}
+22:55:46.166 <- Streamer: {"type":"ping","time":1653616546}
+22:56:46.185 <- Streamer: {"type":"ping","time":1653616606}
+22:57:46.188 <- Streamer: {"type":"ping","time":1653616666}
+22:58:46.171 <- Streamer: {"type":"ping","time":1653616726}
+22:59:46.192 <- Streamer: {"type":"ping","time":1653616786}
+23:00:46.179 <- Streamer: {"type":"ping","time":1653616846}
+23:01:46.163 <- Streamer: {"type":"ping","time":1653616906}

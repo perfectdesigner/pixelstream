@@ -1,0 +1,26 @@
+14:54:14.529 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": true,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "/www/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "177.71.139.51",
+	"MatchmakerPort": "9999",
+	"PublicIp": "187.22.129.241",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun1.l.google.com:19302\",\"turn:187.22.129.241:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"Another TURN in the road\"}] }"
+}
+14:54:15.938 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun1.l.google.com:19302","turn:187.22.129.241:19303"],"username":"PixelStreamingUser","credential":"Another TURN in the road"}]}
+14:54:15.942 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 4.27.
+14:54:16.421 WebSocket listening to Streamer connections on :8888
+14:54:16.421 WebSocket listening to Players connections on :80
+14:54:16.423 Http listening on *: 80
+14:54:37.465 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+14:54:37.467 Setting Keep Alive to true
+14:54:37.468 Matchmaker connection closed (hadError=true)
+14:54:37.468 Try reconnect to Matchmaker in 5 seconds

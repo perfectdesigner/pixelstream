@@ -1,0 +1,863 @@
+00:15:20.843 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": true,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "/www/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "177.71.139.51",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:187.22.129.241:19302\",\"turn:187.22.129.241:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"Another TURN in the road\"}] }",
+	"publicIp": "187.22.129.241"
+}
+00:15:21.446 peerConnectionOptions = {"iceServers":[{"urls":["stun:187.22.129.241:19302","turn:187.22.129.241:19303"],"username":"PixelStreamingUser","credential":"Another TURN in the road"}]}
+00:15:21.453 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 4.27.
+00:15:21.622 WebSocket listening to Streamer connections on :8888
+00:15:21.622 WebSocket listening to Players connections on :80
+00:15:21.625 Http listening on *: 80
+00:15:21.826 Streamer connected: ::1
+00:15:42.675 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:15:42.677 Setting Keep Alive to true
+00:15:42.680 Matchmaker connection closed (hadError=true)
+00:15:42.680 Try reconnect to Matchmaker in 5 seconds
+00:16:01.393 player 101 (::1) connected
+00:16:01.411 <- player 101: {"type":"offer","sdp":"v=0\r\no=- 382753643263573357 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 124 120 123 119 35 36 37 38 39 40 41 42 114 115 116 117 118 43\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:82nH\r\na=ice-pwd:ShbE3eFi1UNVaiCxHMosHR30\r\na=ice-options:trickle\r\na=fingerprint:sha-256 EF:23:20:3D:FE:56:FF:37:FC:D3:62:DF:80:4B:25:6F:1C:09:40:A8:25:83:36:DF:54:BB:82:3D:E1:86:87:0E\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:102 VP9/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 profile-id=1\r\na=rtpmap:122 rtx/90000\r\na=fmtp:122 apt=102\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:121 rtx/90000\r\na=fmtp:121 apt=127\r\na=rtpmap:125 H264/90000\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:124 H264/90000\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:120 rtx/90000\r\na=fmtp:120 apt=124\r\na=rtpmap:123 H264/90000\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:119 rtx/90000\r\na=fmtp:119 apt=123\r\na=rtpmap:35 H264/90000\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=fmtp:35 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f\r\na=rtpmap:36 rtx/90000\r\na=fmtp:36 apt=35\r\na=rtpmap:37 H264/90000\r\na=rtcp-fb:37 goog-remb\r\na=rtcp-fb:37 transport-cc\r\na=rtcp-fb:37 ccm fir\r\na=rtcp-fb:37 nack\r\na=rtcp-fb:37 nack pli\r\na=fmtp:37 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=f4001f\r\na=rtpmap:38 rtx/90000\r\na=fmtp:38 apt=37\r\na=rtpmap:39 H264/90000\r\na=rtcp-fb:39 goog-remb\r\na=rtcp-fb:39 transport-cc\r\na=rtcp-fb:39 ccm fir\r\na=rtcp-fb:39 nack\r\na=rtcp-fb:39 nack pli\r\na=fmtp:39 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=f4001f\r\na=rtpmap:40 rtx/90000\r\na=fmtp:40 apt=39\r\na=rtpmap:41 AV1/90000\r\na=rtcp-fb:41 goog-remb\r\na=rtcp-fb:41 transport-cc\r\na=rtcp-fb:41 ccm fir\r\na=rtcp-fb:41 nack\r\na=rtcp-fb:41 nack pli\r\na=rtpmap:42 rtx/90000\r\na=fmtp:42 apt=41\r\na=rtpmap:114 H264/90000\r\na=rtcp-fb:114 goog-remb\r\na=rtcp-fb:114 transport-cc\r\na=rtcp-fb:114 ccm fir\r\na=rtcp-fb:114 nack\r\na=rtcp-fb:114 nack pli\r\na=fmtp:114 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=rtpmap:43 flexfec-03/90000\r\na=rtcp-fb:43 goog-remb\r\na=rtcp-fb:43 transport-cc\r\na=fmtp:43 repair-window=10000000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:82nH\r\na=ice-pwd:ShbE3eFi1UNVaiCxHMosHR30\r\na=ice-options:trickle\r\na=fingerprint:sha-256 EF:23:20:3D:FE:56:FF:37:FC:D3:62:DF:80:4B:25:6F:1C:09:40:A8:25:83:36:DF:54:BB:82:3D:E1:86:87:0E\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1;stereo=1;sprop-maxcapturerate=48000\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:82nH\r\na=ice-pwd:ShbE3eFi1UNVaiCxHMosHR30\r\na=ice-options:trickle\r\na=fingerprint:sha-256 EF:23:20:3D:FE:56:FF:37:FC:D3:62:DF:80:4B:25:6F:1C:09:40:A8:25:83:36:DF:54:BB:82:3D:E1:86:87:0E\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+00:16:01.411 <- player 101: offer
+00:16:01.414 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 56991 typ host generation 0 ufrag 82nH network-id 2","sdpMid":"0","sdpMLineIndex":0}}
+00:16:01.415 <- player 101: iceCandidate
+00:16:01.415 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 56992 typ host generation 0 ufrag 82nH network-id 3","sdpMid":"0","sdpMLineIndex":0}}
+00:16:01.416 <- player 101: iceCandidate
+00:16:01.416 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 56993 typ host generation 0 ufrag 82nH network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+00:16:01.416 <- player 101: iceCandidate
+00:16:01.416 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 56994 typ host generation 0 ufrag 82nH network-id 2","sdpMid":"1","sdpMLineIndex":1}}
+00:16:01.417 <- player 101: iceCandidate
+00:16:01.417 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 56995 typ host generation 0 ufrag 82nH network-id 3","sdpMid":"1","sdpMLineIndex":1}}
+00:16:01.417 <- player 101: iceCandidate
+00:16:01.418 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 56996 typ host generation 0 ufrag 82nH network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+00:16:01.418 <- player 101: iceCandidate
+00:16:01.418 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 56997 typ host generation 0 ufrag 82nH network-id 2","sdpMid":"2","sdpMLineIndex":2}}
+00:16:01.419 <- player 101: iceCandidate
+00:16:01.419 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 56998 typ host generation 0 ufrag 82nH network-id 3","sdpMid":"2","sdpMLineIndex":2}}
+00:16:01.419 <- player 101: iceCandidate
+00:16:01.419 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 56999 typ host generation 0 ufrag 82nH network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+00:16:01.420 <- player 101: iceCandidate
+00:16:01.554 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2335125386 1 tcp 1518283007 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 9 typ host tcptype active generation 0 ufrag 82nH network-id 2","sdpMid":"0","sdpMLineIndex":0}}
+00:16:01.561 <- player 101: iceCandidate
+00:16:01.567 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518217471 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 82nH network-id 3","sdpMid":"0","sdpMLineIndex":0}}
+00:16:01.569 <- player 101: iceCandidate
+00:16:01.569 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 82nH network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+00:16:01.570 <- player 101: iceCandidate
+00:16:01.570 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2335125386 1 tcp 1518283007 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 9 typ host tcptype active generation 0 ufrag 82nH network-id 2","sdpMid":"1","sdpMLineIndex":1}}
+00:16:01.571 <- player 101: iceCandidate
+00:16:01.571 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518217471 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 82nH network-id 3","sdpMid":"1","sdpMLineIndex":1}}
+00:16:01.571 <- player 101: iceCandidate
+00:16:01.572 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 82nH network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+00:16:01.572 <- player 101: iceCandidate
+00:16:01.572 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2335125386 1 tcp 1518283007 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 9 typ host tcptype active generation 0 ufrag 82nH network-id 2","sdpMid":"2","sdpMLineIndex":2}}
+00:16:01.573 <- player 101: iceCandidate
+00:16:01.573 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518217471 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 82nH network-id 3","sdpMid":"2","sdpMLineIndex":2}}
+00:16:01.573 <- player 101: iceCandidate
+00:16:01.574 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 82nH network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+00:16:01.574 <- player 101: iceCandidate
+00:16:01.691 <- Streamer: {"type":"answer","playerId":101,"sdp":"v=0\r\no=- 5227307248312349873 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 108 109 116 117 118\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v9H6\r\na=ice-pwd:EcDOmrs0ZnlHIjIuk8Js7kwR\r\na=ice-options:trickle\r\na=fingerprint:sha-256 37:35:98:60:B5:BB:2E:21:AA:50:3F:D5:A0:1C:E3:89:63:F0:08:D0:8A:C7:80:82:D7:B4:13:E8:CC:C5:AF:F8\r\na=setup:active\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=ssrc-group:FID 4085283479 3644141668\r\na=ssrc:4085283479 cname:HqY2zg1K9FTRPslQ\r\na=ssrc:4085283479 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:4085283479 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:4085283479 label:pixelstreaming_video_track_label\r\na=ssrc:3644141668 cname:HqY2zg1K9FTRPslQ\r\na=ssrc:3644141668 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:3644141668 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:3644141668 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:v9H6\r\na=ice-pwd:EcDOmrs0ZnlHIjIuk8Js7kwR\r\na=ice-options:trickle\r\na=fingerprint:sha-256 37:35:98:60:B5:BB:2E:21:AA:50:3F:D5:A0:1C:E3:89:63:F0:08:D0:8A:C7:80:82:D7:B4:13:E8:CC:C5:AF:F8\r\na=setup:active\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendonly\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:2389908263 cname:HqY2zg1K9FTRPslQ\r\na=ssrc:2389908263 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:2389908263 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:2389908263 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\nb=AS:30\r\na=ice-ufrag:v9H6\r\na=ice-pwd:EcDOmrs0ZnlHIjIuk8Js7kwR\r\na=ice-options:trickle\r\na=fingerprint:sha-256 37:35:98:60:B5:BB:2E:21:AA:50:3F:D5:A0:1C:E3:89:63:F0:08:D0:8A:C7:80:82:D7:B4:13:E8:CC:C5:AF:F8\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+00:16:01.720 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 57002 typ host generation 0 ufrag v9H6 network-id 2"}}
+00:16:01.753 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 57003 typ host generation 0 ufrag v9H6 network-id 3"}}
+00:16:01.786 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 57004 typ host generation 0 ufrag v9H6 network-id 1"}}
+00:16:08.868 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:16:08.869 Setting Keep Alive to true
+00:16:08.869 Matchmaker connection closed (hadError=true)
+00:16:08.869 Try reconnect to Matchmaker in 5 seconds
+00:16:22.057 <- Streamer: {"type":"ping","time":1657422982}
+00:16:34.908 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:16:34.908 Setting Keep Alive to true
+00:16:34.908 Matchmaker connection closed (hadError=true)
+00:16:34.909 Try reconnect to Matchmaker in 5 seconds
+00:16:35.905 player 101 connection closed: 1001 - 
+00:16:36.970 player 102 (::1) connected
+00:16:36.980 <- player 102: {"type":"offer","sdp":"v=0\r\no=- 5653462123738536169 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 124 120 123 119 35 36 37 38 39 40 41 42 114 115 116 117 118 43\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:aefq\r\na=ice-pwd:KAyixDmBXtnDjaHoFPanWV4X\r\na=ice-options:trickle\r\na=fingerprint:sha-256 0A:09:CC:DB:7E:96:E2:39:5A:10:62:EB:BA:FF:26:CE:F3:61:44:19:22:13:7B:47:CA:37:FF:89:26:DF:69:D6\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:102 VP9/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 profile-id=1\r\na=rtpmap:122 rtx/90000\r\na=fmtp:122 apt=102\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:121 rtx/90000\r\na=fmtp:121 apt=127\r\na=rtpmap:125 H264/90000\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:124 H264/90000\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:120 rtx/90000\r\na=fmtp:120 apt=124\r\na=rtpmap:123 H264/90000\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:119 rtx/90000\r\na=fmtp:119 apt=123\r\na=rtpmap:35 H264/90000\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=fmtp:35 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f\r\na=rtpmap:36 rtx/90000\r\na=fmtp:36 apt=35\r\na=rtpmap:37 H264/90000\r\na=rtcp-fb:37 goog-remb\r\na=rtcp-fb:37 transport-cc\r\na=rtcp-fb:37 ccm fir\r\na=rtcp-fb:37 nack\r\na=rtcp-fb:37 nack pli\r\na=fmtp:37 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=f4001f\r\na=rtpmap:38 rtx/90000\r\na=fmtp:38 apt=37\r\na=rtpmap:39 H264/90000\r\na=rtcp-fb:39 goog-remb\r\na=rtcp-fb:39 transport-cc\r\na=rtcp-fb:39 ccm fir\r\na=rtcp-fb:39 nack\r\na=rtcp-fb:39 nack pli\r\na=fmtp:39 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=f4001f\r\na=rtpmap:40 rtx/90000\r\na=fmtp:40 apt=39\r\na=rtpmap:41 AV1/90000\r\na=rtcp-fb:41 goog-remb\r\na=rtcp-fb:41 transport-cc\r\na=rtcp-fb:41 ccm fir\r\na=rtcp-fb:41 nack\r\na=rtcp-fb:41 nack pli\r\na=rtpmap:42 rtx/90000\r\na=fmtp:42 apt=41\r\na=rtpmap:114 H264/90000\r\na=rtcp-fb:114 goog-remb\r\na=rtcp-fb:114 transport-cc\r\na=rtcp-fb:114 ccm fir\r\na=rtcp-fb:114 nack\r\na=rtcp-fb:114 nack pli\r\na=fmtp:114 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=rtpmap:43 flexfec-03/90000\r\na=rtcp-fb:43 goog-remb\r\na=rtcp-fb:43 transport-cc\r\na=fmtp:43 repair-window=10000000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:aefq\r\na=ice-pwd:KAyixDmBXtnDjaHoFPanWV4X\r\na=ice-options:trickle\r\na=fingerprint:sha-256 0A:09:CC:DB:7E:96:E2:39:5A:10:62:EB:BA:FF:26:CE:F3:61:44:19:22:13:7B:47:CA:37:FF:89:26:DF:69:D6\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1;stereo=1;sprop-maxcapturerate=48000\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:aefq\r\na=ice-pwd:KAyixDmBXtnDjaHoFPanWV4X\r\na=ice-options:trickle\r\na=fingerprint:sha-256 0A:09:CC:DB:7E:96:E2:39:5A:10:62:EB:BA:FF:26:CE:F3:61:44:19:22:13:7B:47:CA:37:FF:89:26:DF:69:D6\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+00:16:36.980 <- player 102: offer
+00:16:36.983 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 65269 typ host generation 0 ufrag aefq network-id 2","sdpMid":"0","sdpMLineIndex":0}}
+00:16:36.984 <- player 102: iceCandidate
+00:16:36.985 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 65270 typ host generation 0 ufrag aefq network-id 3","sdpMid":"0","sdpMLineIndex":0}}
+00:16:36.985 <- player 102: iceCandidate
+00:16:36.985 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 65271 typ host generation 0 ufrag aefq network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+00:16:36.986 <- player 102: iceCandidate
+00:16:36.986 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 65272 typ host generation 0 ufrag aefq network-id 2","sdpMid":"1","sdpMLineIndex":1}}
+00:16:36.987 <- player 102: iceCandidate
+00:16:36.987 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 65273 typ host generation 0 ufrag aefq network-id 3","sdpMid":"1","sdpMLineIndex":1}}
+00:16:36.988 <- player 102: iceCandidate
+00:16:36.988 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 65274 typ host generation 0 ufrag aefq network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+00:16:36.989 <- player 102: iceCandidate
+00:16:36.989 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 65275 typ host generation 0 ufrag aefq network-id 2","sdpMid":"2","sdpMLineIndex":2}}
+00:16:36.990 <- player 102: iceCandidate
+00:16:36.990 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 65276 typ host generation 0 ufrag aefq network-id 3","sdpMid":"2","sdpMLineIndex":2}}
+00:16:36.990 <- player 102: iceCandidate
+00:16:36.991 <- player 102: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 65277 typ host generation 0 ufrag aefq network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+00:16:36.991 <- player 102: iceCandidate
+00:16:37.032 <- Streamer: {"type":"answer","playerId":102,"sdp":"v=0\r\no=- 667962938368620109 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 108 109 116 117 118\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Q6cA\r\na=ice-pwd:LDa7yuZAIq6vASLi/zyrSBr2\r\na=ice-options:trickle\r\na=fingerprint:sha-256 A8:63:7C:8F:2E:E4:BA:0B:17:88:29:61:42:A5:36:93:6A:05:D4:F7:8B:FC:EA:05:46:CE:6B:3E:74:A7:9B:78\r\na=setup:active\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=ssrc-group:FID 1660419581 2218523276\r\na=ssrc:1660419581 cname:PBqs12Je2Q4kb+6X\r\na=ssrc:1660419581 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:1660419581 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:1660419581 label:pixelstreaming_video_track_label\r\na=ssrc:2218523276 cname:PBqs12Je2Q4kb+6X\r\na=ssrc:2218523276 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:2218523276 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:2218523276 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:Q6cA\r\na=ice-pwd:LDa7yuZAIq6vASLi/zyrSBr2\r\na=ice-options:trickle\r\na=fingerprint:sha-256 A8:63:7C:8F:2E:E4:BA:0B:17:88:29:61:42:A5:36:93:6A:05:D4:F7:8B:FC:EA:05:46:CE:6B:3E:74:A7:9B:78\r\na=setup:active\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendonly\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:4156653044 cname:PBqs12Je2Q4kb+6X\r\na=ssrc:4156653044 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:4156653044 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:4156653044 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\nb=AS:30\r\na=ice-ufrag:Q6cA\r\na=ice-pwd:LDa7yuZAIq6vASLi/zyrSBr2\r\na=ice-options:trickle\r\na=fingerprint:sha-256 A8:63:7C:8F:2E:E4:BA:0B:17:88:29:61:42:A5:36:93:6A:05:D4:F7:8B:FC:EA:05:46:CE:6B:3E:74:A7:9B:78\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+00:16:37.065 <- Streamer: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 65280 typ host generation 0 ufrag Q6cA network-id 2"}}
+00:16:37.099 <- Streamer: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 65281 typ host generation 0 ufrag Q6cA network-id 3"}}
+00:16:37.133 <- Streamer: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 65282 typ host generation 0 ufrag Q6cA network-id 1"}}
+00:17:00.956 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:17:00.956 Setting Keep Alive to true
+00:17:00.957 Matchmaker connection closed (hadError=true)
+00:17:00.957 Try reconnect to Matchmaker in 5 seconds
+00:17:27.010 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:17:27.010 Setting Keep Alive to true
+00:17:27.010 Matchmaker connection closed (hadError=true)
+00:17:27.010 Try reconnect to Matchmaker in 5 seconds
+00:17:27.213 <- Streamer: {"type":"ping","time":1657423047}
+00:17:49.788 player 102 connection closed: 1005 - 
+00:17:53.052 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:17:53.053 Setting Keep Alive to true
+00:17:53.053 Matchmaker connection closed (hadError=true)
+00:17:53.054 Try reconnect to Matchmaker in 5 seconds
+00:18:19.103 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:18:19.107 Setting Keep Alive to true
+00:18:19.109 Matchmaker connection closed (hadError=true)
+00:18:19.112 Try reconnect to Matchmaker in 5 seconds
+00:18:19.164 Streamer connected: ::1
+00:18:45.163 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:18:45.164 Setting Keep Alive to true
+00:18:45.164 Matchmaker connection closed (hadError=true)
+00:18:45.164 Try reconnect to Matchmaker in 5 seconds
+00:19:11.206 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:19:11.207 Setting Keep Alive to true
+00:19:11.208 Matchmaker connection closed (hadError=true)
+00:19:11.208 Try reconnect to Matchmaker in 5 seconds
+00:19:19.248 <- Streamer: {"type":"ping","time":1657423159}
+00:19:25.840 Streamer connected: ::1
+00:19:37.256 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:19:37.256 Setting Keep Alive to true
+00:19:37.256 Matchmaker connection closed (hadError=true)
+00:19:37.257 Try reconnect to Matchmaker in 5 seconds
+00:20:03.297 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:20:03.297 Setting Keep Alive to true
+00:20:03.298 Matchmaker connection closed (hadError=true)
+00:20:03.298 Try reconnect to Matchmaker in 5 seconds
+00:20:29.365 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:20:29.366 Setting Keep Alive to true
+00:20:29.367 Matchmaker connection closed (hadError=true)
+00:20:29.367 Try reconnect to Matchmaker in 5 seconds
+00:20:55.413 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:20:55.414 Setting Keep Alive to true
+00:20:55.414 Matchmaker connection closed (hadError=true)
+00:20:55.414 Try reconnect to Matchmaker in 5 seconds
+00:21:21.466 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:21:21.467 Setting Keep Alive to true
+00:21:21.468 Matchmaker connection closed (hadError=true)
+00:21:21.468 Try reconnect to Matchmaker in 5 seconds
+00:21:47.517 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:21:47.518 Setting Keep Alive to true
+00:21:47.518 Matchmaker connection closed (hadError=true)
+00:21:47.518 Try reconnect to Matchmaker in 5 seconds
+00:22:13.550 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:22:13.551 Setting Keep Alive to true
+00:22:13.551 Matchmaker connection closed (hadError=true)
+00:22:13.551 Try reconnect to Matchmaker in 5 seconds
+00:22:39.586 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:22:39.587 Setting Keep Alive to true
+00:22:39.587 Matchmaker connection closed (hadError=true)
+00:22:39.587 Try reconnect to Matchmaker in 5 seconds
+00:23:05.632 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:23:05.632 Setting Keep Alive to true
+00:23:05.633 Matchmaker connection closed (hadError=true)
+00:23:05.633 Try reconnect to Matchmaker in 5 seconds
+00:23:31.681 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:23:31.682 Setting Keep Alive to true
+00:23:31.682 Matchmaker connection closed (hadError=true)
+00:23:31.682 Try reconnect to Matchmaker in 5 seconds
+00:23:57.733 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:23:57.733 Setting Keep Alive to true
+00:23:57.733 Matchmaker connection closed (hadError=true)
+00:23:57.733 Try reconnect to Matchmaker in 5 seconds
+00:24:23.768 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:24:23.769 Setting Keep Alive to true
+00:24:23.769 Matchmaker connection closed (hadError=true)
+00:24:23.770 Try reconnect to Matchmaker in 5 seconds
+00:24:49.814 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:24:49.815 Setting Keep Alive to true
+00:24:49.815 Matchmaker connection closed (hadError=true)
+00:24:49.815 Try reconnect to Matchmaker in 5 seconds
+00:25:15.858 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:25:15.859 Setting Keep Alive to true
+00:25:15.859 Matchmaker connection closed (hadError=true)
+00:25:15.859 Try reconnect to Matchmaker in 5 seconds
+00:25:41.902 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:25:41.903 Setting Keep Alive to true
+00:25:41.903 Matchmaker connection closed (hadError=true)
+00:25:41.903 Try reconnect to Matchmaker in 5 seconds
+00:26:07.942 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:26:07.942 Setting Keep Alive to true
+00:26:07.943 Matchmaker connection closed (hadError=true)
+00:26:07.943 Try reconnect to Matchmaker in 5 seconds
+00:26:33.972 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:26:33.976 Setting Keep Alive to true
+00:26:33.978 Matchmaker connection closed (hadError=true)
+00:26:33.981 Try reconnect to Matchmaker in 5 seconds
+00:27:00.021 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:27:00.022 Setting Keep Alive to true
+00:27:00.022 Matchmaker connection closed (hadError=true)
+00:27:00.023 Try reconnect to Matchmaker in 5 seconds
+00:27:26.053 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:27:26.053 Setting Keep Alive to true
+00:27:26.054 Matchmaker connection closed (hadError=true)
+00:27:26.054 Try reconnect to Matchmaker in 5 seconds
+00:27:52.107 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:27:52.108 Setting Keep Alive to true
+00:27:52.109 Matchmaker connection closed (hadError=true)
+00:27:52.110 Try reconnect to Matchmaker in 5 seconds
+00:28:18.141 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:28:18.141 Setting Keep Alive to true
+00:28:18.142 Matchmaker connection closed (hadError=true)
+00:28:18.142 Try reconnect to Matchmaker in 5 seconds
+00:28:44.168 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:28:44.168 Setting Keep Alive to true
+00:28:44.168 Matchmaker connection closed (hadError=true)
+00:28:44.169 Try reconnect to Matchmaker in 5 seconds
+00:29:10.205 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:29:10.206 Setting Keep Alive to true
+00:29:10.206 Matchmaker connection closed (hadError=true)
+00:29:10.206 Try reconnect to Matchmaker in 5 seconds
+00:29:36.267 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:29:36.267 Setting Keep Alive to true
+00:29:36.267 Matchmaker connection closed (hadError=true)
+00:29:36.268 Try reconnect to Matchmaker in 5 seconds
+00:30:02.315 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:30:02.316 Setting Keep Alive to true
+00:30:02.316 Matchmaker connection closed (hadError=true)
+00:30:02.316 Try reconnect to Matchmaker in 5 seconds
+00:30:28.367 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:30:28.368 Setting Keep Alive to true
+00:30:28.368 Matchmaker connection closed (hadError=true)
+00:30:28.368 Try reconnect to Matchmaker in 5 seconds
+00:30:54.425 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:30:54.425 Setting Keep Alive to true
+00:30:54.425 Matchmaker connection closed (hadError=true)
+00:30:54.426 Try reconnect to Matchmaker in 5 seconds
+00:31:20.462 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:31:20.462 Setting Keep Alive to true
+00:31:20.462 Matchmaker connection closed (hadError=true)
+00:31:20.463 Try reconnect to Matchmaker in 5 seconds
+00:31:46.512 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:31:46.512 Setting Keep Alive to true
+00:31:46.512 Matchmaker connection closed (hadError=true)
+00:31:46.512 Try reconnect to Matchmaker in 5 seconds
+00:32:12.555 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:32:12.556 Setting Keep Alive to true
+00:32:12.556 Matchmaker connection closed (hadError=true)
+00:32:12.556 Try reconnect to Matchmaker in 5 seconds
+00:32:38.601 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:32:38.601 Setting Keep Alive to true
+00:32:38.601 Matchmaker connection closed (hadError=true)
+00:32:38.601 Try reconnect to Matchmaker in 5 seconds
+00:33:04.646 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:33:04.647 Setting Keep Alive to true
+00:33:04.647 Matchmaker connection closed (hadError=true)
+00:33:04.647 Try reconnect to Matchmaker in 5 seconds
+00:33:30.693 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:33:30.693 Setting Keep Alive to true
+00:33:30.693 Matchmaker connection closed (hadError=true)
+00:33:30.693 Try reconnect to Matchmaker in 5 seconds
+00:33:56.747 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:33:56.748 Setting Keep Alive to true
+00:33:56.748 Matchmaker connection closed (hadError=true)
+00:33:56.748 Try reconnect to Matchmaker in 5 seconds
+00:34:22.784 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:34:22.785 Setting Keep Alive to true
+00:34:22.785 Matchmaker connection closed (hadError=true)
+00:34:22.785 Try reconnect to Matchmaker in 5 seconds
+00:34:48.841 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:34:48.842 Setting Keep Alive to true
+00:34:48.842 Matchmaker connection closed (hadError=true)
+00:34:48.842 Try reconnect to Matchmaker in 5 seconds
+00:35:14.882 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:35:14.882 Setting Keep Alive to true
+00:35:14.882 Matchmaker connection closed (hadError=true)
+00:35:14.883 Try reconnect to Matchmaker in 5 seconds
+00:35:40.924 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:35:40.925 Setting Keep Alive to true
+00:35:40.925 Matchmaker connection closed (hadError=true)
+00:35:40.926 Try reconnect to Matchmaker in 5 seconds
+00:36:06.965 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:36:06.965 Setting Keep Alive to true
+00:36:06.966 Matchmaker connection closed (hadError=true)
+00:36:06.966 Try reconnect to Matchmaker in 5 seconds
+00:36:33.009 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:36:33.009 Setting Keep Alive to true
+00:36:33.010 Matchmaker connection closed (hadError=true)
+00:36:33.010 Try reconnect to Matchmaker in 5 seconds
+00:36:59.056 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:36:59.057 Setting Keep Alive to true
+00:36:59.058 Matchmaker connection closed (hadError=true)
+00:36:59.058 Try reconnect to Matchmaker in 5 seconds
+00:37:25.100 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:37:25.101 Setting Keep Alive to true
+00:37:25.101 Matchmaker connection closed (hadError=true)
+00:37:25.101 Try reconnect to Matchmaker in 5 seconds
+00:37:51.141 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:37:51.142 Setting Keep Alive to true
+00:37:51.142 Matchmaker connection closed (hadError=true)
+00:37:51.142 Try reconnect to Matchmaker in 5 seconds
+00:38:17.187 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:38:17.189 Setting Keep Alive to true
+00:38:17.191 Matchmaker connection closed (hadError=true)
+00:38:17.193 Try reconnect to Matchmaker in 5 seconds
+00:38:43.233 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:38:43.233 Setting Keep Alive to true
+00:38:43.234 Matchmaker connection closed (hadError=true)
+00:38:43.235 Try reconnect to Matchmaker in 5 seconds
+00:39:09.289 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:39:09.289 Setting Keep Alive to true
+00:39:09.290 Matchmaker connection closed (hadError=true)
+00:39:09.290 Try reconnect to Matchmaker in 5 seconds
+00:39:35.323 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:39:35.325 Setting Keep Alive to true
+00:39:35.327 Matchmaker connection closed (hadError=true)
+00:39:35.327 Try reconnect to Matchmaker in 5 seconds
+00:40:01.373 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:40:01.373 Setting Keep Alive to true
+00:40:01.374 Matchmaker connection closed (hadError=true)
+00:40:01.374 Try reconnect to Matchmaker in 5 seconds
+00:40:27.408 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:40:27.409 Setting Keep Alive to true
+00:40:27.409 Matchmaker connection closed (hadError=true)
+00:40:27.409 Try reconnect to Matchmaker in 5 seconds
+00:40:53.451 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:40:53.451 Setting Keep Alive to true
+00:40:53.451 Matchmaker connection closed (hadError=true)
+00:40:53.452 Try reconnect to Matchmaker in 5 seconds
+00:41:19.486 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:41:19.487 Setting Keep Alive to true
+00:41:19.487 Matchmaker connection closed (hadError=true)
+00:41:19.487 Try reconnect to Matchmaker in 5 seconds
+00:41:45.513 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:41:45.513 Setting Keep Alive to true
+00:41:45.513 Matchmaker connection closed (hadError=true)
+00:41:45.514 Try reconnect to Matchmaker in 5 seconds
+00:42:11.554 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:42:11.554 Setting Keep Alive to true
+00:42:11.554 Matchmaker connection closed (hadError=true)
+00:42:11.554 Try reconnect to Matchmaker in 5 seconds
+00:42:37.598 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:42:37.598 Setting Keep Alive to true
+00:42:37.598 Matchmaker connection closed (hadError=true)
+00:42:37.599 Try reconnect to Matchmaker in 5 seconds
+00:43:03.634 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:43:03.635 Setting Keep Alive to true
+00:43:03.635 Matchmaker connection closed (hadError=true)
+00:43:03.635 Try reconnect to Matchmaker in 5 seconds
+00:43:29.685 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:43:29.685 Setting Keep Alive to true
+00:43:29.685 Matchmaker connection closed (hadError=true)
+00:43:29.686 Try reconnect to Matchmaker in 5 seconds
+00:43:55.731 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:43:55.731 Setting Keep Alive to true
+00:43:55.732 Matchmaker connection closed (hadError=true)
+00:43:55.732 Try reconnect to Matchmaker in 5 seconds
+00:44:21.765 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:44:21.766 Setting Keep Alive to true
+00:44:21.767 Matchmaker connection closed (hadError=true)
+00:44:21.767 Try reconnect to Matchmaker in 5 seconds
+00:44:47.806 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:44:47.806 Setting Keep Alive to true
+00:44:47.807 Matchmaker connection closed (hadError=true)
+00:44:47.807 Try reconnect to Matchmaker in 5 seconds
+00:45:13.852 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:45:13.855 Setting Keep Alive to true
+00:45:13.858 Matchmaker connection closed (hadError=true)
+00:45:13.858 Try reconnect to Matchmaker in 5 seconds
+00:45:39.882 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:45:39.883 Setting Keep Alive to true
+00:45:39.883 Matchmaker connection closed (hadError=true)
+00:45:39.883 Try reconnect to Matchmaker in 5 seconds
+00:46:05.935 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:46:05.936 Setting Keep Alive to true
+00:46:05.936 Matchmaker connection closed (hadError=true)
+00:46:05.936 Try reconnect to Matchmaker in 5 seconds
+00:46:31.979 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:46:31.979 Setting Keep Alive to true
+00:46:31.980 Matchmaker connection closed (hadError=true)
+00:46:31.980 Try reconnect to Matchmaker in 5 seconds
+00:46:58.023 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:46:58.024 Setting Keep Alive to true
+00:46:58.024 Matchmaker connection closed (hadError=true)
+00:46:58.024 Try reconnect to Matchmaker in 5 seconds
+00:47:24.065 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:47:24.066 Setting Keep Alive to true
+00:47:24.066 Matchmaker connection closed (hadError=true)
+00:47:24.066 Try reconnect to Matchmaker in 5 seconds
+00:47:50.095 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:47:50.098 Setting Keep Alive to true
+00:47:50.100 Matchmaker connection closed (hadError=true)
+00:47:50.102 Try reconnect to Matchmaker in 5 seconds
+00:48:16.152 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:48:16.153 Setting Keep Alive to true
+00:48:16.154 Matchmaker connection closed (hadError=true)
+00:48:16.154 Try reconnect to Matchmaker in 5 seconds
+00:48:42.213 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:48:42.213 Setting Keep Alive to true
+00:48:42.213 Matchmaker connection closed (hadError=true)
+00:48:42.214 Try reconnect to Matchmaker in 5 seconds
+00:49:08.265 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:49:08.266 Setting Keep Alive to true
+00:49:08.266 Matchmaker connection closed (hadError=true)
+00:49:08.267 Try reconnect to Matchmaker in 5 seconds
+00:49:34.321 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:49:34.321 Setting Keep Alive to true
+00:49:34.321 Matchmaker connection closed (hadError=true)
+00:49:34.322 Try reconnect to Matchmaker in 5 seconds
+00:50:00.370 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:50:00.370 Setting Keep Alive to true
+00:50:00.370 Matchmaker connection closed (hadError=true)
+00:50:00.371 Try reconnect to Matchmaker in 5 seconds
+00:50:26.419 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:50:26.420 Setting Keep Alive to true
+00:50:26.420 Matchmaker connection closed (hadError=true)
+00:50:26.420 Try reconnect to Matchmaker in 5 seconds
+00:50:52.467 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:50:52.468 Setting Keep Alive to true
+00:50:52.469 Matchmaker connection closed (hadError=true)
+00:50:52.469 Try reconnect to Matchmaker in 5 seconds
+00:51:18.501 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:51:18.501 Setting Keep Alive to true
+00:51:18.502 Matchmaker connection closed (hadError=true)
+00:51:18.502 Try reconnect to Matchmaker in 5 seconds
+00:51:44.540 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:51:44.541 Setting Keep Alive to true
+00:51:44.541 Matchmaker connection closed (hadError=true)
+00:51:44.541 Try reconnect to Matchmaker in 5 seconds
+00:52:10.597 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:52:10.598 Setting Keep Alive to true
+00:52:10.598 Matchmaker connection closed (hadError=true)
+00:52:10.598 Try reconnect to Matchmaker in 5 seconds
+00:52:36.652 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:52:36.653 Setting Keep Alive to true
+00:52:36.653 Matchmaker connection closed (hadError=true)
+00:52:36.653 Try reconnect to Matchmaker in 5 seconds
+00:53:02.701 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:53:02.701 Setting Keep Alive to true
+00:53:02.701 Matchmaker connection closed (hadError=true)
+00:53:02.702 Try reconnect to Matchmaker in 5 seconds
+00:53:28.747 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:53:28.748 Setting Keep Alive to true
+00:53:28.748 Matchmaker connection closed (hadError=true)
+00:53:28.748 Try reconnect to Matchmaker in 5 seconds
+00:53:54.781 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:53:54.782 Setting Keep Alive to true
+00:53:54.784 Matchmaker connection closed (hadError=true)
+00:53:54.784 Try reconnect to Matchmaker in 5 seconds
+00:54:20.838 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:54:20.838 Setting Keep Alive to true
+00:54:20.838 Matchmaker connection closed (hadError=true)
+00:54:20.839 Try reconnect to Matchmaker in 5 seconds
+00:54:46.893 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:54:46.894 Setting Keep Alive to true
+00:54:46.894 Matchmaker connection closed (hadError=true)
+00:54:46.895 Try reconnect to Matchmaker in 5 seconds
+00:55:12.940 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:55:12.942 Setting Keep Alive to true
+00:55:12.942 Matchmaker connection closed (hadError=true)
+00:55:12.942 Try reconnect to Matchmaker in 5 seconds
+00:55:38.993 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:55:38.995 Setting Keep Alive to true
+00:55:38.995 Matchmaker connection closed (hadError=true)
+00:55:38.995 Try reconnect to Matchmaker in 5 seconds
+00:56:05.052 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:56:05.052 Setting Keep Alive to true
+00:56:05.052 Matchmaker connection closed (hadError=true)
+00:56:05.053 Try reconnect to Matchmaker in 5 seconds
+00:56:31.090 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:56:31.091 Setting Keep Alive to true
+00:56:31.091 Matchmaker connection closed (hadError=true)
+00:56:31.092 Try reconnect to Matchmaker in 5 seconds
+00:56:57.153 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:56:57.154 Setting Keep Alive to true
+00:56:57.154 Matchmaker connection closed (hadError=true)
+00:56:57.154 Try reconnect to Matchmaker in 5 seconds
+00:57:23.195 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:57:23.195 Setting Keep Alive to true
+00:57:23.195 Matchmaker connection closed (hadError=true)
+00:57:23.196 Try reconnect to Matchmaker in 5 seconds
+00:57:49.239 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:57:49.239 Setting Keep Alive to true
+00:57:49.239 Matchmaker connection closed (hadError=true)
+00:57:49.239 Try reconnect to Matchmaker in 5 seconds
+00:58:15.285 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:58:15.286 Setting Keep Alive to true
+00:58:15.286 Matchmaker connection closed (hadError=true)
+00:58:15.287 Try reconnect to Matchmaker in 5 seconds
+00:58:41.329 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:58:41.330 Setting Keep Alive to true
+00:58:41.330 Matchmaker connection closed (hadError=true)
+00:58:41.330 Try reconnect to Matchmaker in 5 seconds
+00:59:07.359 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:59:07.360 Setting Keep Alive to true
+00:59:07.361 Matchmaker connection closed (hadError=true)
+00:59:07.361 Try reconnect to Matchmaker in 5 seconds
+00:59:33.394 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:59:33.395 Setting Keep Alive to true
+00:59:33.395 Matchmaker connection closed (hadError=true)
+00:59:33.395 Try reconnect to Matchmaker in 5 seconds
+00:59:59.436 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+00:59:59.436 Setting Keep Alive to true
+00:59:59.436 Matchmaker connection closed (hadError=true)
+00:59:59.436 Try reconnect to Matchmaker in 5 seconds
+01:00:25.475 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:00:25.476 Setting Keep Alive to true
+01:00:25.476 Matchmaker connection closed (hadError=true)
+01:00:25.477 Try reconnect to Matchmaker in 5 seconds
+01:00:51.519 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:00:51.519 Setting Keep Alive to true
+01:00:51.520 Matchmaker connection closed (hadError=true)
+01:00:51.520 Try reconnect to Matchmaker in 5 seconds
+01:01:17.571 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:01:17.573 Setting Keep Alive to true
+01:01:17.575 Matchmaker connection closed (hadError=true)
+01:01:17.576 Try reconnect to Matchmaker in 5 seconds
+01:01:43.620 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:01:43.621 Setting Keep Alive to true
+01:01:43.621 Matchmaker connection closed (hadError=true)
+01:01:43.621 Try reconnect to Matchmaker in 5 seconds
+01:02:09.659 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:02:09.660 Setting Keep Alive to true
+01:02:09.661 Matchmaker connection closed (hadError=true)
+01:02:09.661 Try reconnect to Matchmaker in 5 seconds
+01:02:35.703 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:02:35.703 Setting Keep Alive to true
+01:02:35.703 Matchmaker connection closed (hadError=true)
+01:02:35.704 Try reconnect to Matchmaker in 5 seconds
+01:03:01.758 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:03:01.758 Setting Keep Alive to true
+01:03:01.758 Matchmaker connection closed (hadError=true)
+01:03:01.759 Try reconnect to Matchmaker in 5 seconds
+01:03:27.800 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:03:27.800 Setting Keep Alive to true
+01:03:27.801 Matchmaker connection closed (hadError=true)
+01:03:27.801 Try reconnect to Matchmaker in 5 seconds
+01:03:53.851 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:03:53.852 Setting Keep Alive to true
+01:03:53.852 Matchmaker connection closed (hadError=true)
+01:03:53.853 Try reconnect to Matchmaker in 5 seconds
+01:04:19.897 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:04:19.897 Setting Keep Alive to true
+01:04:19.898 Matchmaker connection closed (hadError=true)
+01:04:19.898 Try reconnect to Matchmaker in 5 seconds
+01:04:45.945 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:04:45.946 Setting Keep Alive to true
+01:04:45.946 Matchmaker connection closed (hadError=true)
+01:04:45.946 Try reconnect to Matchmaker in 5 seconds
+01:05:11.989 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:05:11.990 Setting Keep Alive to true
+01:05:11.990 Matchmaker connection closed (hadError=true)
+01:05:11.991 Try reconnect to Matchmaker in 5 seconds
+01:05:38.027 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:05:38.027 Setting Keep Alive to true
+01:05:38.027 Matchmaker connection closed (hadError=true)
+01:05:38.028 Try reconnect to Matchmaker in 5 seconds
+01:06:04.076 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:06:04.076 Setting Keep Alive to true
+01:06:04.078 Matchmaker connection closed (hadError=true)
+01:06:04.079 Try reconnect to Matchmaker in 5 seconds
+01:06:30.127 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:06:30.127 Setting Keep Alive to true
+01:06:30.128 Matchmaker connection closed (hadError=true)
+01:06:30.128 Try reconnect to Matchmaker in 5 seconds
+01:06:56.174 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:06:56.175 Setting Keep Alive to true
+01:06:56.175 Matchmaker connection closed (hadError=true)
+01:06:56.175 Try reconnect to Matchmaker in 5 seconds
+01:07:22.207 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:07:22.207 Setting Keep Alive to true
+01:07:22.208 Matchmaker connection closed (hadError=true)
+01:07:22.208 Try reconnect to Matchmaker in 5 seconds
+01:07:48.259 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:07:48.259 Setting Keep Alive to true
+01:07:48.259 Matchmaker connection closed (hadError=true)
+01:07:48.260 Try reconnect to Matchmaker in 5 seconds
+01:08:14.299 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:08:14.299 Setting Keep Alive to true
+01:08:14.299 Matchmaker connection closed (hadError=true)
+01:08:14.299 Try reconnect to Matchmaker in 5 seconds
+01:08:40.335 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:08:40.335 Setting Keep Alive to true
+01:08:40.336 Matchmaker connection closed (hadError=true)
+01:08:40.336 Try reconnect to Matchmaker in 5 seconds
+01:09:06.380 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:09:06.380 Setting Keep Alive to true
+01:09:06.381 Matchmaker connection closed (hadError=true)
+01:09:06.381 Try reconnect to Matchmaker in 5 seconds
+01:09:32.425 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:09:32.426 Setting Keep Alive to true
+01:09:32.426 Matchmaker connection closed (hadError=true)
+01:09:32.426 Try reconnect to Matchmaker in 5 seconds
+01:09:58.463 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:09:58.464 Setting Keep Alive to true
+01:09:58.464 Matchmaker connection closed (hadError=true)
+01:09:58.464 Try reconnect to Matchmaker in 5 seconds
+01:10:24.505 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:10:24.505 Setting Keep Alive to true
+01:10:24.506 Matchmaker connection closed (hadError=true)
+01:10:24.506 Try reconnect to Matchmaker in 5 seconds
+01:10:50.542 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:10:50.542 Setting Keep Alive to true
+01:10:50.543 Matchmaker connection closed (hadError=true)
+01:10:50.543 Try reconnect to Matchmaker in 5 seconds
+01:11:16.598 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:11:16.598 Setting Keep Alive to true
+01:11:16.598 Matchmaker connection closed (hadError=true)
+01:11:16.598 Try reconnect to Matchmaker in 5 seconds
+01:11:42.647 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:11:42.648 Setting Keep Alive to true
+01:11:42.648 Matchmaker connection closed (hadError=true)
+01:11:42.648 Try reconnect to Matchmaker in 5 seconds
+01:12:08.693 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:12:08.694 Setting Keep Alive to true
+01:12:08.694 Matchmaker connection closed (hadError=true)
+01:12:08.694 Try reconnect to Matchmaker in 5 seconds
+01:12:34.736 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:12:34.737 Setting Keep Alive to true
+01:12:34.737 Matchmaker connection closed (hadError=true)
+01:12:34.737 Try reconnect to Matchmaker in 5 seconds
+01:13:00.782 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:13:00.783 Setting Keep Alive to true
+01:13:00.783 Matchmaker connection closed (hadError=true)
+01:13:00.783 Try reconnect to Matchmaker in 5 seconds
+01:13:26.836 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:13:26.836 Setting Keep Alive to true
+01:13:26.836 Matchmaker connection closed (hadError=true)
+01:13:26.837 Try reconnect to Matchmaker in 5 seconds
+01:13:52.871 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:13:52.871 Setting Keep Alive to true
+01:13:52.871 Matchmaker connection closed (hadError=true)
+01:13:52.872 Try reconnect to Matchmaker in 5 seconds
+01:14:18.917 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:14:18.917 Setting Keep Alive to true
+01:14:18.918 Matchmaker connection closed (hadError=true)
+01:14:18.918 Try reconnect to Matchmaker in 5 seconds
+01:14:44.941 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:14:44.942 Setting Keep Alive to true
+01:14:44.942 Matchmaker connection closed (hadError=true)
+01:14:44.943 Try reconnect to Matchmaker in 5 seconds
+01:15:10.979 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:15:10.980 Setting Keep Alive to true
+01:15:10.980 Matchmaker connection closed (hadError=true)
+01:15:10.980 Try reconnect to Matchmaker in 5 seconds
+01:15:37.016 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:15:37.017 Setting Keep Alive to true
+01:15:37.017 Matchmaker connection closed (hadError=true)
+01:15:37.017 Try reconnect to Matchmaker in 5 seconds
+01:16:03.056 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:16:03.057 Setting Keep Alive to true
+01:16:03.057 Matchmaker connection closed (hadError=true)
+01:16:03.057 Try reconnect to Matchmaker in 5 seconds
+01:16:29.110 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:16:29.111 Setting Keep Alive to true
+01:16:29.111 Matchmaker connection closed (hadError=true)
+01:16:29.111 Try reconnect to Matchmaker in 5 seconds
+01:16:55.181 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:16:55.181 Setting Keep Alive to true
+01:16:55.181 Matchmaker connection closed (hadError=true)
+01:16:55.182 Try reconnect to Matchmaker in 5 seconds
+01:17:21.228 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:17:21.229 Setting Keep Alive to true
+01:17:21.229 Matchmaker connection closed (hadError=true)
+01:17:21.229 Try reconnect to Matchmaker in 5 seconds
+01:17:47.265 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:17:47.265 Setting Keep Alive to true
+01:17:47.265 Matchmaker connection closed (hadError=true)
+01:17:47.266 Try reconnect to Matchmaker in 5 seconds
+01:18:13.322 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:18:13.323 Setting Keep Alive to true
+01:18:13.323 Matchmaker connection closed (hadError=true)
+01:18:13.323 Try reconnect to Matchmaker in 5 seconds
+01:18:39.352 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:18:39.352 Setting Keep Alive to true
+01:18:39.353 Matchmaker connection closed (hadError=true)
+01:18:39.353 Try reconnect to Matchmaker in 5 seconds
+01:19:05.391 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:19:05.392 Setting Keep Alive to true
+01:19:05.392 Matchmaker connection closed (hadError=true)
+01:19:05.392 Try reconnect to Matchmaker in 5 seconds
+01:19:31.430 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:19:31.431 Setting Keep Alive to true
+01:19:31.431 Matchmaker connection closed (hadError=true)
+01:19:31.432 Try reconnect to Matchmaker in 5 seconds
+01:19:57.473 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:19:57.474 Setting Keep Alive to true
+01:19:57.475 Matchmaker connection closed (hadError=true)
+01:19:57.475 Try reconnect to Matchmaker in 5 seconds
+01:20:23.527 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:20:23.528 Setting Keep Alive to true
+01:20:23.528 Matchmaker connection closed (hadError=true)
+01:20:23.528 Try reconnect to Matchmaker in 5 seconds
+01:20:49.566 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:20:49.566 Setting Keep Alive to true
+01:20:49.566 Matchmaker connection closed (hadError=true)
+01:20:49.567 Try reconnect to Matchmaker in 5 seconds
+01:21:15.612 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:21:15.618 Setting Keep Alive to true
+01:21:15.623 Matchmaker connection closed (hadError=true)
+01:21:15.624 Try reconnect to Matchmaker in 5 seconds
+01:21:41.667 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:21:41.667 Setting Keep Alive to true
+01:21:41.667 Matchmaker connection closed (hadError=true)
+01:21:41.667 Try reconnect to Matchmaker in 5 seconds
+01:22:07.692 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:22:07.693 Setting Keep Alive to true
+01:22:07.694 Matchmaker connection closed (hadError=true)
+01:22:07.694 Try reconnect to Matchmaker in 5 seconds
+01:22:33.734 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:22:33.735 Setting Keep Alive to true
+01:22:33.735 Matchmaker connection closed (hadError=true)
+01:22:33.735 Try reconnect to Matchmaker in 5 seconds
+01:22:59.776 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:22:59.776 Setting Keep Alive to true
+01:22:59.777 Matchmaker connection closed (hadError=true)
+01:22:59.777 Try reconnect to Matchmaker in 5 seconds
+01:23:25.831 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:23:25.831 Setting Keep Alive to true
+01:23:25.832 Matchmaker connection closed (hadError=true)
+01:23:25.833 Try reconnect to Matchmaker in 5 seconds
+01:23:51.877 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:23:51.877 Setting Keep Alive to true
+01:23:51.878 Matchmaker connection closed (hadError=true)
+01:23:51.878 Try reconnect to Matchmaker in 5 seconds
+01:24:17.931 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:24:17.931 Setting Keep Alive to true
+01:24:17.931 Matchmaker connection closed (hadError=true)
+01:24:17.932 Try reconnect to Matchmaker in 5 seconds
+01:24:43.982 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:24:43.982 Setting Keep Alive to true
+01:24:43.982 Matchmaker connection closed (hadError=true)
+01:24:43.983 Try reconnect to Matchmaker in 5 seconds
+01:25:10.033 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:25:10.033 Setting Keep Alive to true
+01:25:10.034 Matchmaker connection closed (hadError=true)
+01:25:10.034 Try reconnect to Matchmaker in 5 seconds
+01:25:36.091 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:25:36.092 Setting Keep Alive to true
+01:25:36.092 Matchmaker connection closed (hadError=true)
+01:25:36.093 Try reconnect to Matchmaker in 5 seconds
+01:26:02.141 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:26:02.144 Setting Keep Alive to true
+01:26:02.149 Matchmaker connection closed (hadError=true)
+01:26:02.152 Try reconnect to Matchmaker in 5 seconds
+01:26:28.194 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:26:28.194 Setting Keep Alive to true
+01:26:28.194 Matchmaker connection closed (hadError=true)
+01:26:28.195 Try reconnect to Matchmaker in 5 seconds
+01:26:54.265 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:26:54.265 Setting Keep Alive to true
+01:26:54.265 Matchmaker connection closed (hadError=true)
+01:26:54.266 Try reconnect to Matchmaker in 5 seconds
+01:27:20.298 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:27:20.299 Setting Keep Alive to true
+01:27:20.299 Matchmaker connection closed (hadError=true)
+01:27:20.299 Try reconnect to Matchmaker in 5 seconds
+01:27:46.326 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:27:46.326 Setting Keep Alive to true
+01:27:46.326 Matchmaker connection closed (hadError=true)
+01:27:46.326 Try reconnect to Matchmaker in 5 seconds
+01:28:12.350 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:28:12.351 Setting Keep Alive to true
+01:28:12.351 Matchmaker connection closed (hadError=true)
+01:28:12.352 Try reconnect to Matchmaker in 5 seconds
+01:28:38.410 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:28:38.411 Setting Keep Alive to true
+01:28:38.411 Matchmaker connection closed (hadError=true)
+01:28:38.412 Try reconnect to Matchmaker in 5 seconds
+01:29:04.471 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:29:04.473 Setting Keep Alive to true
+01:29:04.473 Matchmaker connection closed (hadError=true)
+01:29:04.474 Try reconnect to Matchmaker in 5 seconds
+01:29:30.524 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:29:30.524 Setting Keep Alive to true
+01:29:30.525 Matchmaker connection closed (hadError=true)
+01:29:30.525 Try reconnect to Matchmaker in 5 seconds
+01:29:56.559 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:29:56.560 Setting Keep Alive to true
+01:29:56.560 Matchmaker connection closed (hadError=true)
+01:29:56.560 Try reconnect to Matchmaker in 5 seconds
+01:30:22.594 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:30:22.595 Setting Keep Alive to true
+01:30:22.595 Matchmaker connection closed (hadError=true)
+01:30:22.595 Try reconnect to Matchmaker in 5 seconds
+01:30:48.637 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:30:48.638 Setting Keep Alive to true
+01:30:48.638 Matchmaker connection closed (hadError=true)
+01:30:48.639 Try reconnect to Matchmaker in 5 seconds
+01:31:14.682 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:31:14.683 Setting Keep Alive to true
+01:31:14.683 Matchmaker connection closed (hadError=true)
+01:31:14.683 Try reconnect to Matchmaker in 5 seconds
+01:31:40.724 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:31:40.725 Setting Keep Alive to true
+01:31:40.728 Matchmaker connection closed (hadError=true)
+01:31:40.730 Try reconnect to Matchmaker in 5 seconds
+01:32:06.769 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:32:06.770 Setting Keep Alive to true
+01:32:06.770 Matchmaker connection closed (hadError=true)
+01:32:06.770 Try reconnect to Matchmaker in 5 seconds
+01:32:32.823 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:32:32.823 Setting Keep Alive to true
+01:32:32.823 Matchmaker connection closed (hadError=true)
+01:32:32.824 Try reconnect to Matchmaker in 5 seconds
+01:32:58.866 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:32:58.866 Setting Keep Alive to true
+01:32:58.867 Matchmaker connection closed (hadError=true)
+01:32:58.867 Try reconnect to Matchmaker in 5 seconds
+01:33:24.914 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:33:24.914 Setting Keep Alive to true
+01:33:24.914 Matchmaker connection closed (hadError=true)
+01:33:24.915 Try reconnect to Matchmaker in 5 seconds
+01:33:50.948 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:33:50.948 Setting Keep Alive to true
+01:33:50.949 Matchmaker connection closed (hadError=true)
+01:33:50.949 Try reconnect to Matchmaker in 5 seconds
+01:34:16.987 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:34:16.988 Setting Keep Alive to true
+01:34:16.989 Matchmaker connection closed (hadError=true)
+01:34:16.989 Try reconnect to Matchmaker in 5 seconds
+01:34:43.035 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:34:43.037 Setting Keep Alive to true
+01:34:43.038 Matchmaker connection closed (hadError=true)
+01:34:43.038 Try reconnect to Matchmaker in 5 seconds
+01:35:09.081 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:35:09.081 Setting Keep Alive to true
+01:35:09.082 Matchmaker connection closed (hadError=true)
+01:35:09.082 Try reconnect to Matchmaker in 5 seconds
+01:35:35.120 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:35:35.121 Setting Keep Alive to true
+01:35:35.121 Matchmaker connection closed (hadError=true)
+01:35:35.121 Try reconnect to Matchmaker in 5 seconds
+01:36:01.170 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:36:01.170 Setting Keep Alive to true
+01:36:01.170 Matchmaker connection closed (hadError=true)
+01:36:01.171 Try reconnect to Matchmaker in 5 seconds
+01:36:27.224 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:36:27.225 Setting Keep Alive to true
+01:36:27.225 Matchmaker connection closed (hadError=true)
+01:36:27.225 Try reconnect to Matchmaker in 5 seconds
+01:36:53.267 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:36:53.268 Setting Keep Alive to true
+01:36:53.268 Matchmaker connection closed (hadError=true)
+01:36:53.268 Try reconnect to Matchmaker in 5 seconds
+01:37:19.311 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:37:19.312 Setting Keep Alive to true
+01:37:19.312 Matchmaker connection closed (hadError=true)
+01:37:19.312 Try reconnect to Matchmaker in 5 seconds
+01:37:45.365 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:37:45.366 Setting Keep Alive to true
+01:37:45.366 Matchmaker connection closed (hadError=true)
+01:37:45.366 Try reconnect to Matchmaker in 5 seconds
+01:38:11.406 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+01:38:11.407 Setting Keep Alive to true
+01:38:11.407 Matchmaker connection closed (hadError=true)
+01:38:11.407 Try reconnect to Matchmaker in 5 seconds

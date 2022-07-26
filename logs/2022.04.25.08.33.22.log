@@ -1,0 +1,23 @@
+08:33:22.058 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "/www/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 82,
+	"HttpsPort": 443,
+	"StreamerPort": 8889,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun1.l.google.com:19302\",\"turn:flexinterativa.ngrok.io:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"Another TURN in the road\"}] }",
+	"publicIp": ""
+}
+08:33:22.082 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun1.l.google.com:19302","turn:flexinterativa.ngrok.io:19303"],"username":"PixelStreamingUser","credential":"Another TURN in the road"}]}
+08:33:22.085 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 4.27.
+08:33:22.086 WebSocket listening to Streamer connections on :8889
+08:33:22.087 WebSocket listening to Players connections on :82
+08:33:22.088 Http listening on *: 82

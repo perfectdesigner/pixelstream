@@ -1,0 +1,5 @@
+<FilesMatch "\.(php|html|htm)$">
+    <IfModule mod_headers>
+        Header set Access-Control-Allow-Origin "*"
+    </IfModule>
+</FilesMatch>

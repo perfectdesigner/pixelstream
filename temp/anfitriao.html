@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+	<style>
+			.bg_video{
+			position: fixed; 
+			right: 0; 
+			bottom: 0;
+			min-width: 100%; 
+			min-height: 100%;
+			width: auto; 
+			height: auto; 
+			z-index: -1000;
+			background: url(images/torre.jpg) no-repeat;
+			background-size: cover; 
+		}
+		</style>
+
+    <title>META VERSO</title>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/sign-in_signin.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="signin.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+<body class="text-center" style="background:#111">
+    <form class="form-signin">
+      <img class="mb-4" src="/logo.png" alt="" style="margin-top: 50px;" width="100%" height="auto">
+	  <input type="hidden" name="operacao" value="login">
+	  
+	      <label for="inputEmail" class="sr-only">ID DA SALA</label>
+	  
+      <input type="text" id="inputSala" name="sala" class="form-control" placeholder="Nome da sala" required="" autofocus="">
+	  
+      <h1 class="h3 mb-3 font-weight-normal" style="color: #fff;margin-top: -50px;">Faça login</h1>
+      <label for="inputEmail" class="sr-only">Endereço de email Ou ID</label>
+      <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Seu email" required="" autofocus="">
+      <label for="inputPassword" class="sr-only">Senha</label>
+      <input type="password" id="inputPassword" name="senha" style="margin-top:15px;" class="form-control" placeholder="Senha" required="">
+      <div class="checkbox mb-3">
+        <label style="color: #fff;">
+          <input type="checkbox" value="remember-me"> Lembrar de mim
+        </label>
+      </div>
+      <a href="javascript:vpoid(0)" id="btlogar" class="btn btn-lg btn-primary btn-block">Login</a>
+      <p class="mt-5 mb-3 text-muted">© 2022 -  (META VERSO)</p>
+    </form>
+
+<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+	<video autoplay="" loop="" poster="polina.jpg" class="bg_video" controls="" muted="">
+			<source src="/videobg/loops-4k-Futurista.mp4" type="video/mp4">
+		</video>	
+</div>
+	
+<script>
+	
+	function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
+	
+	jQuery(document).ready(function(){
+	
+	jQuery('#btlogar').click(function(){
+	
+
+	jQuery.ajax({ 
+    type: 'GET', 
+    url: 'https://marketingcentral.com.br/flex/check_streams.php', 
+    data:  jQuery("form").serialize(), 
+    dataType: 'json',
+    success: function (data) { 
+
+	  if(data.result == 'success'){
+	  
+	  
+	  if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+
+localStorage.setItem("userid", data.iddb);
+localStorage.setItem("userlevel", data.level);
+localStorage.setItem("username", data.nick);
+
+
+
+setTimeout(function(name){
+
+//rand = Number(getRandomArbitrary(10, 100));
+
+rand = 'flexinterativa';
+
+
+if(data.level == 0){
+
+ window.location = '/participante-dashboard.html?room=' + jQuery('#inputSala').val() + '_' + rand + '&name='+name;
+ 
+}else{
+
+ window.location = '/anfitriao-dashboard.html?room=' + jQuery('#inputSala').val() + '_' + rand + '&name='+name;
+
+}
+
+ }, 2500, data.nick);
+
+  
+} else {
+  // Sorry! No Web Storage support..
+}
+	  
+	  
+	  
+	  
+	  
+	  }
+	
+	}
+	
+})
+
+
+})
+
+})
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+19:29:44.424 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "/www/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun1.l.google.com:19302\",\"turn:flexinterativa.ngrok.io:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"Another TURN in the road\"}] }",
+	"publicIp": ""
+}
+19:29:44.456 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun1.l.google.com:19302","turn:flexinterativa.ngrok.io:19303"],"username":"PixelStreamingUser","credential":"Another TURN in the road"}]}
+19:29:44.460 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 4.27.
+19:29:44.474 WebSocket listening to Streamer connections on :8888
+19:29:44.474 WebSocket listening to Players connections on :80
+19:29:44.475 Http listening on *: 80
+19:29:44.539 Streamer connected: ::1
+19:30:44.629 <- Streamer: {"type":"ping","time":1653431444}
+19:31:44.606 <- Streamer: {"type":"ping","time":1653431504}
+19:32:44.626 <- Streamer: {"type":"ping","time":1653431564}
+19:33:44.626 <- Streamer: {"type":"ping","time":1653431624}
+19:34:44.645 <- Streamer: {"type":"ping","time":1653431684}
+19:35:44.613 <- Streamer: {"type":"ping","time":1653431744}
+19:36:44.628 <- Streamer: {"type":"ping","time":1653431804}
+19:37:44.635 <- Streamer: {"type":"ping","time":1653431864}
+19:38:44.634 <- Streamer: {"type":"ping","time":1653431924}
+19:39:44.614 <- Streamer: {"type":"ping","time":1653431984}
+19:40:44.639 <- Streamer: {"type":"ping","time":1653432044}
+19:41:44.626 <- Streamer: {"type":"ping","time":1653432104}
+19:42:44.626 <- Streamer: {"type":"ping","time":1653432164}
+19:43:44.631 <- Streamer: {"type":"ping","time":1653432224}
+19:44:44.632 <- Streamer: {"type":"ping","time":1653432284}
+19:45:44.638 <- Streamer: {"type":"ping","time":1653432344}
+19:46:44.632 <- Streamer: {"type":"ping","time":1653432404}
+19:47:44.626 <- Streamer: {"type":"ping","time":1653432464}
+19:48:44.611 <- Streamer: {"type":"ping","time":1653432524}

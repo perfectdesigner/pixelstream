@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Viewer</title>
+    <meta charset="UTF-8" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <video playsinline autoplay muted></video>
+    <button id="enable-audio">Enable audio :)</button>
+    <script src="https://flexinterativa-socketio.ngrok.io/socket.io/socket.io.js"></script>
+    <script src="https://flexinterativa-socketio.ngrok.io/watch.js"></script>
+
+  </body>
+</html>

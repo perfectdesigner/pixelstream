@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+img{filter: brightness(1.0);}
+img:hover{filter: brightness(1.3);}
+
+</style>
+
+  <head>
+
+    <!-- head -->
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.">
+    <meta name="author" content="David Deutsch">
+    <title>
+    Carrosel Cameras
+    </title>
+     <link rel="stylesheet" href="/css/owl.carousel.min.css">
+	   <link rel="stylesheet" href="/css/theme.default.min.css">
+	   
+		<script src="/js/jquery_v2.min.js"></script>
+		  <script src="/js/owl.carousel.min.js"></script>
+  </head>
+  <body>
+
+    <!-- body -->
+    <div class="home-demo">
+      <div class="row">
+        <div class="large-12 columns">
+  	 <div class="owl-carousel">
+            <div class="item">
+			<img style="cursor:pointer" onclick="parent.setcamera(1)" src="/images/cameras/Camera1.jpg" width="100%" height="auto" />
+            </div>
+            <div class="item">
+   			<img style="cursor:pointer" onclick="parent.setcamera(2)" src="/images/cameras/Camera2.jpg" width="100%" height="auto" />
+            </div>
+            <div class="item">
+     	    <img style="cursor:pointer" onclick="parent.setcamera(3)" src="/images/cameras/Camera3.jpg" width="100%" height="auto" />
+            </div>
+            <div class="item">
+            <img style="cursor:pointer" onclick="parent.setcamera(4)" src="/images/cameras/Camera4.jpg" width="100%" height="auto" />
+            </div>
+            <div class="item">
+             <img style="cursor:pointer" onclick="parent.setcamera(5)" src="/images/cameras/Camera5.jpg" width="100%" height="auto" />
+            </div>
+            <div class="item">
+             <img style="cursor:pointer" onclick="parent.setcamera(6)" src="/images/cameras/Camera6.jpg" width="100%" height="auto" />
+            </div>
+            <div class="item">
+            <img style="cursor:pointer" onclick="parent.setcamera(7)" src="/images/cameras/Camera7.jpg" width="100%" height="auto" />
+            </div>
+			   <div class="item">
+            <img style="cursor:pointer" onclick="parent.setcamera(7)" src="/images/cameras/Camera8.jpg" width="100%" height="auto" />
+            </div>
+  
+  
+        </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        margin: 5,
+        loop: true,
+        responsive: {
+          0: {
+            items: 2
+          },
+          600: {
+            items: 4
+          },
+          1000: {
+            items: 6
+          }
+        }
+      })
+    </script>
+
+ 
+
+
+
+    <!-- vendors -->
+   <!-- <script src="assets/vendors/highlight.js"></script>
+    <script src="assets/js/app.js"></script>-->
+  </body>
+</html>

@@ -1,0 +1,99 @@
+06:00:30.268 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": true,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"HomepageFile": "/www/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "177.71.139.51",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8888,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:187.22.129.241:19302\",\"turn:187.22.129.241:19303\"], \"username\": \"PixelStreamingUser\", \"credential\": \"Another TURN in the road\"}] }",
+	"publicIp": "187.22.129.241"
+}
+06:00:30.298 peerConnectionOptions = {"iceServers":[{"urls":["stun:187.22.129.241:19302","turn:187.22.129.241:19303"],"username":"PixelStreamingUser","credential":"Another TURN in the road"}]}
+06:00:30.315 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 4.27.
+06:00:30.437 WebSocket listening to Streamer connections on :8888
+06:00:30.437 WebSocket listening to Players connections on :80
+06:00:30.442 Http listening on *: 80
+06:00:51.473 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+06:00:51.473 Setting Keep Alive to true
+06:00:51.473 Matchmaker connection closed (hadError=true)
+06:00:51.473 Try reconnect to Matchmaker in 5 seconds
+06:01:10.632 Streamer connected: ::1
+06:01:17.518 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+06:01:17.522 Setting Keep Alive to true
+06:01:17.524 Matchmaker connection closed (hadError=true)
+06:01:17.526 Try reconnect to Matchmaker in 5 seconds
+06:01:19.276 Streamer connected: ::1
+06:01:22.905 player 101 (::1) connected
+06:01:22.927 <- player 101: {"type":"offer","sdp":"v=0\r\no=- 1759576326113775211 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 122 127 121 125 107 108 109 124 120 123 119 35 36 37 38 39 40 41 42 114 115 116 117 118 43\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:5Vtp\r\na=ice-pwd:oRAP0oMSf1UgIDmwsdcNHvuy\r\na=ice-options:trickle\r\na=fingerprint:sha-256 D8:38:5E:05:78:BC:DF:87:67:29:46:EF:57:BE:BD:25:AD:40:BE:20:7B:7E:3C:79:3B:B3:C4:E7:1C:5E:0B:11\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:102 VP9/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 profile-id=1\r\na=rtpmap:122 rtx/90000\r\na=fmtp:122 apt=102\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:121 rtx/90000\r\na=fmtp:121 apt=127\r\na=rtpmap:125 H264/90000\r\na=rtcp-fb:125 goog-remb\r\na=rtcp-fb:125 transport-cc\r\na=rtcp-fb:125 ccm fir\r\na=rtcp-fb:125 nack\r\na=rtcp-fb:125 nack pli\r\na=fmtp:125 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=125\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:124 H264/90000\r\na=rtcp-fb:124 goog-remb\r\na=rtcp-fb:124 transport-cc\r\na=rtcp-fb:124 ccm fir\r\na=rtcp-fb:124 nack\r\na=rtcp-fb:124 nack pli\r\na=fmtp:124 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:120 rtx/90000\r\na=fmtp:120 apt=124\r\na=rtpmap:123 H264/90000\r\na=rtcp-fb:123 goog-remb\r\na=rtcp-fb:123 transport-cc\r\na=rtcp-fb:123 ccm fir\r\na=rtcp-fb:123 nack\r\na=rtcp-fb:123 nack pli\r\na=fmtp:123 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:119 rtx/90000\r\na=fmtp:119 apt=123\r\na=rtpmap:35 H264/90000\r\na=rtcp-fb:35 goog-remb\r\na=rtcp-fb:35 transport-cc\r\na=rtcp-fb:35 ccm fir\r\na=rtcp-fb:35 nack\r\na=rtcp-fb:35 nack pli\r\na=fmtp:35 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f\r\na=rtpmap:36 rtx/90000\r\na=fmtp:36 apt=35\r\na=rtpmap:37 H264/90000\r\na=rtcp-fb:37 goog-remb\r\na=rtcp-fb:37 transport-cc\r\na=rtcp-fb:37 ccm fir\r\na=rtcp-fb:37 nack\r\na=rtcp-fb:37 nack pli\r\na=fmtp:37 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=f4001f\r\na=rtpmap:38 rtx/90000\r\na=fmtp:38 apt=37\r\na=rtpmap:39 H264/90000\r\na=rtcp-fb:39 goog-remb\r\na=rtcp-fb:39 transport-cc\r\na=rtcp-fb:39 ccm fir\r\na=rtcp-fb:39 nack\r\na=rtcp-fb:39 nack pli\r\na=fmtp:39 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=f4001f\r\na=rtpmap:40 rtx/90000\r\na=fmtp:40 apt=39\r\na=rtpmap:41 AV1/90000\r\na=rtcp-fb:41 goog-remb\r\na=rtcp-fb:41 transport-cc\r\na=rtcp-fb:41 ccm fir\r\na=rtcp-fb:41 nack\r\na=rtcp-fb:41 nack pli\r\na=rtpmap:42 rtx/90000\r\na=fmtp:42 apt=41\r\na=rtpmap:114 H264/90000\r\na=rtcp-fb:114 goog-remb\r\na=rtcp-fb:114 transport-cc\r\na=rtcp-fb:114 ccm fir\r\na=rtcp-fb:114 nack\r\na=rtcp-fb:114 nack pli\r\na=fmtp:114 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:115 rtx/90000\r\na=fmtp:115 apt=114\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=rtpmap:43 flexfec-03/90000\r\na=rtcp-fb:43 goog-remb\r\na=rtcp-fb:43 transport-cc\r\na=fmtp:43 repair-window=10000000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 103 104 9 0 8 110 112 113 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:5Vtp\r\na=ice-pwd:oRAP0oMSf1UgIDmwsdcNHvuy\r\na=ice-options:trickle\r\na=fingerprint:sha-256 D8:38:5E:05:78:BC:DF:87:67:29:46:EF:57:BE:BD:25:AD:40:BE:20:7B:7E:3C:79:3B:B3:C4:E7:1C:5E:0B:11\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1;stereo=1;sprop-maxcapturerate=48000\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:103 ISAC/16000\r\na=rtpmap:104 ISAC/32000\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:112 telephone-event/32000\r\na=rtpmap:113 telephone-event/16000\r\na=rtpmap:126 telephone-event/8000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:5Vtp\r\na=ice-pwd:oRAP0oMSf1UgIDmwsdcNHvuy\r\na=ice-options:trickle\r\na=fingerprint:sha-256 D8:38:5E:05:78:BC:DF:87:67:29:46:EF:57:BE:BD:25:AD:40:BE:20:7B:7E:3C:79:3B:B3:C4:E7:1C:5E:0B:11\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+06:01:22.928 <- player 101: offer
+06:01:22.931 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 54376 typ host generation 0 ufrag 5Vtp network-id 2","sdpMid":"0","sdpMLineIndex":0}}
+06:01:22.932 <- player 101: iceCandidate
+06:01:22.933 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 54377 typ host generation 0 ufrag 5Vtp network-id 3","sdpMid":"0","sdpMLineIndex":0}}
+06:01:22.934 <- player 101: iceCandidate
+06:01:22.934 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 54378 typ host generation 0 ufrag 5Vtp network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+06:01:22.934 <- player 101: iceCandidate
+06:01:22.935 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 54379 typ host generation 0 ufrag 5Vtp network-id 2","sdpMid":"1","sdpMLineIndex":1}}
+06:01:22.935 <- player 101: iceCandidate
+06:01:22.936 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 54380 typ host generation 0 ufrag 5Vtp network-id 3","sdpMid":"1","sdpMLineIndex":1}}
+06:01:22.936 <- player 101: iceCandidate
+06:01:22.936 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 54381 typ host generation 0 ufrag 5Vtp network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+06:01:22.937 <- player 101: iceCandidate
+06:01:22.937 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 54382 typ host generation 0 ufrag 5Vtp network-id 2","sdpMid":"2","sdpMLineIndex":2}}
+06:01:22.937 <- player 101: iceCandidate
+06:01:22.938 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 54383 typ host generation 0 ufrag 5Vtp network-id 3","sdpMid":"2","sdpMLineIndex":2}}
+06:01:22.938 <- player 101: iceCandidate
+06:01:22.938 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 54384 typ host generation 0 ufrag 5Vtp network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+06:01:22.938 <- player 101: iceCandidate
+06:01:23.054 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2335125386 1 tcp 1518283007 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 2","sdpMid":"0","sdpMLineIndex":0}}
+06:01:23.055 <- player 101: iceCandidate
+06:01:23.056 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518217471 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 3","sdpMid":"0","sdpMLineIndex":0}}
+06:01:23.056 <- player 101: iceCandidate
+06:01:23.056 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+06:01:23.056 <- player 101: iceCandidate
+06:01:23.056 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2335125386 1 tcp 1518283007 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 2","sdpMid":"1","sdpMLineIndex":1}}
+06:01:23.057 <- player 101: iceCandidate
+06:01:23.057 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518217471 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 3","sdpMid":"1","sdpMLineIndex":1}}
+06:01:23.057 <- player 101: iceCandidate
+06:01:23.057 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 1","sdpMid":"1","sdpMLineIndex":1}}
+06:01:23.057 <- player 101: iceCandidate
+06:01:23.058 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2335125386 1 tcp 1518283007 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 2","sdpMid":"2","sdpMLineIndex":2}}
+06:01:23.058 <- player 101: iceCandidate
+06:01:23.058 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:3923162290 1 tcp 1518217471 2804:14c:bf2f:8d61:853e:755c:557c:41c2 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 3","sdpMid":"2","sdpMLineIndex":2}}
+06:01:23.058 <- player 101: iceCandidate
+06:01:23.059 <- player 101: {"type":"iceCandidate","candidate":{"candidate":"candidate:2887880668 1 tcp 1518149375 192.168.0.3 9 typ host tcptype active generation 0 ufrag 5Vtp network-id 1","sdpMid":"2","sdpMLineIndex":2}}
+06:01:23.059 <- player 101: iceCandidate
+06:01:23.237 <- Streamer: {"type":"answer","playerId":101,"sdp":"v=0\r\no=- 5300391680353386533 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 108 109 116 117 118\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:kTv6\r\na=ice-pwd:WgBhJsMbN3Zna8LZJerUAAeu\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:5D:1D:9B:C5:38:32:E5:2A:55:D8:F3:4C:C7:A3:50:65:9F:BA:F3:29:91:BA:00:D3:95:8D:19:89:9A:3B:25\r\na=setup:active\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 urn:3gpp:video-orientation\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=ssrc-group:FID 1353637450 2978282421\r\na=ssrc:1353637450 cname:vt8qQjXlNXvOB5/s\r\na=ssrc:1353637450 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:1353637450 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:1353637450 label:pixelstreaming_video_track_label\r\na=ssrc:2978282421 cname:vt8qQjXlNXvOB5/s\r\na=ssrc:2978282421 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:2978282421 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:2978282421 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:kTv6\r\na=ice-pwd:WgBhJsMbN3Zna8LZJerUAAeu\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:5D:1D:9B:C5:38:32:E5:2A:55:D8:F3:4C:C7:A3:50:65:9F:BA:F3:29:91:BA:00:D3:95:8D:19:89:9A:3B:25\r\na=setup:active\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendonly\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:1229150502 cname:vt8qQjXlNXvOB5/s\r\na=ssrc:1229150502 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:1229150502 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:1229150502 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\nb=AS:30\r\na=ice-ufrag:kTv6\r\na=ice-pwd:WgBhJsMbN3Zna8LZJerUAAeu\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:5D:1D:9B:C5:38:32:E5:2A:55:D8:F3:4C:C7:A3:50:65:9F:BA:F3:29:91:BA:00:D3:95:8D:19:89:9A:3B:25\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+06:01:23.267 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3316437882 1 udp 2122262783 2804:14c:bf2f:8d61:70d2:6a82:a710:2da0 54387 typ host generation 0 ufrag kTv6 network-id 2"}}
+06:01:23.301 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2807384130 1 udp 2122197247 2804:14c:bf2f:8d61:853e:755c:557c:41c2 54388 typ host generation 0 ufrag kTv6 network-id 3"}}
+06:01:23.334 <- Streamer: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3802297132 1 udp 2122129151 192.168.0.3 54389 typ host generation 0 ufrag kTv6 network-id 1"}}
+06:01:43.571 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+06:01:43.574 Setting Keep Alive to true
+06:01:43.575 Matchmaker connection closed (hadError=true)
+06:01:43.577 Try reconnect to Matchmaker in 5 seconds
+06:02:09.618 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+06:02:09.619 Setting Keep Alive to true
+06:02:09.619 Matchmaker connection closed (hadError=true)
+06:02:09.619 Try reconnect to Matchmaker in 5 seconds
+06:02:23.133 player 101 connection closed: 1001 - 
+06:02:24.052 <- Streamer: {"type":"ping","time":1657443744}
+06:02:35.650 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+06:02:35.651 Setting Keep Alive to true
+06:02:35.651 Matchmaker connection closed (hadError=true)
+06:02:35.652 Try reconnect to Matchmaker in 5 seconds
+06:03:01.686 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+06:03:01.687 Setting Keep Alive to true
+06:03:01.687 Matchmaker connection closed (hadError=true)
+06:03:01.687 Try reconnect to Matchmaker in 5 seconds
+06:03:24.040 <- Streamer: {"type":"ping","time":1657443804}
+06:03:27.739 Matchmaker connection error {"errno":-4039,"code":"ETIMEDOUT","syscall":"connect","address":"177.71.139.51","port":9999}
+06:03:27.740 Setting Keep Alive to true
+06:03:27.740 Matchmaker connection closed (hadError=true)
+06:03:27.740 Try reconnect to Matchmaker in 5 seconds
